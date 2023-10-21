@@ -34,22 +34,22 @@ const iconone = [{
 {
   "icon" : faInstagram,
   "link" : "https://github.com/szerncse",
-  "left" : "38rem",
-  "top" : "30rem",
+  "left" : "40rem",
+  "top" : "31rem",
   "group" : 2
 },
 {
   "icon" : faComment,
   "link" : "https://github.com/szerncse",
-  "left" : "58rem",
-  "top" : "35rem",
+  "left" : "45rem",
+  "top" : "39rem",
   "group" : 2
 },
 {
   "icon" : faArrowUpFromBracket,
   "link" : "https://github.com/szerncse",
-  "left" : "250px",
-  "top" : "200px",
+  "left" : "35rem",
+  "top" : "22rem",
   "group" : 2
 },
 ]
@@ -118,8 +118,8 @@ function Main() {
     <MoonContent>
       <MoonWrap>
         <Moonmain>
-          <ul>I & I</ul>
           {/* <img src="/images/o1bg.png" alt="물" /> */}
+          <ul>I & I</ul>
         </Moonmain>
       
        
