@@ -12,44 +12,49 @@ import { icon } from '@fortawesome/fontawesome-svg-core'
 const iconone = [{
   "icon" : faGithub,
   "link" : "https://github.com/szerncse",
-  "left" : "65rem",
-  "top" : "7.1875rem",
+  "left" : "68rem",
+  "top" : "9rem",
   "img" : './images/o1bg.png',
   "group" : 1
 },
 {
   "icon" : faQuestion,
   "link" : "https://github.com/szerncse",
-  "left" : "71rem",
-  "top" : "14rem",
+  "left" : "74rem",
+  "top" : "16rem",
+  "img" : './images/o1bg.png',
   "group" : 1
 },
 {
   "icon" : faFileContract,
   "link" : "https://github.com/szerncse",
-  "left" : "76rem",
-  "top" : "21rem",
+  "left" : "79rem",
+  "img" : './images/o1bg.png',
+  "top" : "23rem",
   "group" : 1
-},
-{
-  "icon" : faInstagram,
-  "link" : "https://github.com/szerncse",
-  "left" : "40rem",
-  "top" : "31rem",
-  "group" : 2
 },
 {
   "icon" : faComment,
   "link" : "https://github.com/szerncse",
-  "left" : "45rem",
-  "top" : "39rem",
+  "left" : "36rem",
+  "top" : "27rem",
+  "img" : './images/o1bg.png',
+  "group" : 2
+},
+{
+  "icon" : faInstagram,
+  "link" : "https://github.com/szerncse",
+  "left" : "41rem",
+  "top" : "34rem",
+  "img" : './images/o1bg.png',
   "group" : 2
 },
 {
   "icon" : faArrowUpFromBracket,
   "link" : "https://github.com/szerncse",
-  "left" : "35rem",
-  "top" : "22rem",
+  "left" : "47rem",
+  "top" : "41rem",
+  "img" : './images/o1bg.png',
   "group" : 2
 },
 ]
@@ -64,7 +69,7 @@ max-width: 1280px;
 height: 420px;
 margin: 0 auto;
 
-`;
+`
 
 const MoonWrap = styled.div`
 
@@ -79,23 +84,46 @@ const Moonmain = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  position : relative;
-  font-size: 90px;
+  // position : relative;
+  // font-size: 90px;
   background-color: #CAECFF;
   box-shadow: 5px 5px 5px 5px gray;
 `
 
+const MoonImage = styled.img`
+margin-bottom: 60px;
+max-width:210%;
+max-height:210%;
+position:relative;
+opacity:0.3;
+`
+const MoonText = styled.span`
+position:absolute;
+font-size:90px;
+color:#000; 
+`
+
 const Moonsied = styled.div`
 z-index: 10;
-position: absolute;
 margin: 0 auto;
+position: absolute;
 border: 1px solid #000;
 border-radius: 1000px;
-width: 70px;
-height: 70px;
-display: flex;
+width: 60px; height: 60px;
+// display: flex;
+img {
+  position:absolute ;
+  top :30% ;
+  left :50% ;
+  transform :translate(-50%, -50%) ;
+  max-width :420% ;
+  max-height :420%;
+  opacity:0.3; 
+}
+
 background-color: #85D3FF;
 `
+
 
 const Moonicon = styled.div`
 z-index: 11;
@@ -105,6 +133,8 @@ margin: 0 auto;
 border-radius: 1000px;
 display: flex;
 font-size: 30px;
+display: flex;
+justify-content:center ;
 `
 
 
@@ -118,8 +148,8 @@ function Main() {
     <MoonContent>
       <MoonWrap>
         <Moonmain>
-          {/* <img src="/images/o1bg.png" alt="물" /> */}
-          <ul>I & I</ul>
+          <MoonImage  src="/images/o1bg.png" alt="물" />
+          <MoonText>| & |</MoonText>
         </Moonmain>
       
        
@@ -128,7 +158,8 @@ function Main() {
       if (e.group === 1) {
         return (
           <Moonsied className='1' style={{left:e.left, top:e.top}}>
-          <Moonicon key={i}>
+          <Moonicon key={i} >
+            <img  src={e.img} alt="아이콘 배경" />
             <FontAwesomeIcon icon={e.icon} />
           </Moonicon>  
           </Moonsied>
@@ -146,6 +177,7 @@ function Main() {
         return (
           <Moonsied  className='2' style={{left:e.left, top:e.top}}>
           <Moonicon key={i}>
+          <img  src={e.img} alt="아이콘 배경" />
             <FontAwesomeIcon icon={e.icon} />
           </Moonicon>
            </Moonsied>
