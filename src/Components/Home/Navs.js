@@ -103,6 +103,7 @@ function Navs() {
             <NavLogo>
                 <NavLink>
                     <img src="./images/logo.png" alt="로고" />
+                    {/* <img src="./images/logos.png" alt="로고" /> */}
                 </NavLink>
             </NavLogo>
             <NavList>

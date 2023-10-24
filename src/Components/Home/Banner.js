@@ -15,32 +15,32 @@ import { useEffect } from 'react';
 
 const TxtData = [
   {
-    title: "제목1",
-    desc: "부제목",
+    title: "Hello!",
+    desc: "click!",
     desc2: "웹 프론트엔드 개발자 정서진입니다."
 
   },
   {
-    title: "제목2",
-    desc: "부제목",
-    desc2: "하고싶은 말..."
+    title: "Hello!",
+    desc: "click!",
+    desc2: "경험은 성공의 어머니"
 
   },
   {
-    title: "제목3",
-    desc: "부제목",
-    desc2: "하고싶은 말..."
+    title: "Hello!",
+    desc: "click!",
+    desc2: "신입의 열정"
 
   },
   {
-    title: "제목4",
-    desc: "부제목",
-    desc2: "하고싶은 말..."
+    title: "Hello!",
+    desc: "click!",
+    desc2: "열정으로 나아가는"
 
   },
   {
-    title: "제목5",
-    desc: "부제목",
+    title: "Hello!",
+    desc: "click!",
     desc2: "하고싶은 말..."
 
   },
@@ -48,15 +48,40 @@ const TxtData = [
 
 const StyleSlide = styled(SwiperSlide)`
 position: relative;
-img{width: 100%; 
+img{
+  width: 100%; 
 height: auto;
+animation: wave 2s infinite;
+transform-origin: center center;
 }
+@keyframes wave {
+    0% {
+      transform: translateY(0) translateX(0);
+    }
+    
+    25% {
+      transform: translateY(-10px) translateX(0);
+    }
+
+    50% {
+      transform: translateY(0) translateX(-10px);
+    }
+
+     75% {
+      transform: translateY(-10px) translateX(-10px);
+     }
+
+     100% {
+      transform: translateY(0) translateX(0);
+     }
+}
+
 `
 
 const DescContent = styled.div`
 position: absolute;
 left: 50%;
-top: 50%;
+top: 10%;
 color: #000;
 transform: translate(-50%, -50%);
 h3{

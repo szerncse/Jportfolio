@@ -40,7 +40,7 @@ ul{
         position: relative;
         flex-basis: 25%;
         text-align: center;
-        font-size: 20px;
+        font-size: 23px;
         a.active{
             color: red;
             font-weight: bold;
