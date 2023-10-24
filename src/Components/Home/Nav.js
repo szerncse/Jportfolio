@@ -102,7 +102,7 @@ function Nav() {
             </NavLogo>
             <NavList>
                 <ul>
-                <li>HOME</li>
+                <li>HELLO</li>
                 <li>ABOUT</li>
                 <li>Git</li>
                 <li>PROJECTS</li>

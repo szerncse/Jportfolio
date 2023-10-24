@@ -36,24 +36,24 @@ const iconone = [{
 {
   "icon" : faComment,
   "link" : "https://github.com/szerncse",
-  "right" : "31rem",
-  "top" : "12rem",
+  "right" : "30rem",
+  "top" : "19rem",
   "img" : './images/o1bg.png',
   "group" : 2
 },
 {
   "icon" : faInstagram,
   "link" : "https://github.com/szerncse",
-  "right" : "27.5rem",
-  "top" : "18.5rem",
+  "right" : "27rem",
+  "top" : "25rem",
   "img" : './images/o1bg.png',
   "group" : 2
 },
 {
   "icon" : faArrowUpFromBracket,
   "link" : "https://github.com/szerncse",
-  "right" : "24rem",
-  "top" : "25rem",
+  "right" : "23.5rem",
+  "top" : "31rem",
   "img" : './images/o1bg.png',
   "group" : 2
 },
@@ -152,11 +152,17 @@ function Main() {
     <>
      <Nav />
     
-     <div className="bg-white text-black max-w-[1280px] h-[420px] mx-auto">
-     <div className="relative w-[400px] mx-auto md-w-300px md:text-lg">
-  <div className=" m-auto mt-24 border border-gray-300 rounded-full w-[400px] h-[400px] flex justify-center items-center bg-[#CAECFF] hover:bg-[#85D3FF] shadow-lg ">
-    <img className="mt-2.5 w-[400px] h-[400px] mb-1 object-cover absolute  opacity-30" src="/images/o1bg.png" alt="물"/>
-    <span className="absolute text-[90px] text-black">| & |</span>
+     <div className="bg-white text-black max-w-full h-[420px] mx-auto relative">
+     <img className='absolute w-full h-[855px]' src="/images/5.png" alt="바다" />
+     <div className="relative w-[400px] mx-auto pt-24">
+  <div className=" m-auto  border border-gray-300 rounded-full
+   lg:basis-[32.5%] lg:w-[400px] lg:h-[400px] md:w-[350px] md:h-[350px] w-[300px] h-[300px]
+   flex justify-center items-center bg-[#CAECFF] hover:bg-[#85D3FF] shadow-lg">
+    <img className='rounded-full' src="/images/5.png" alt="바다" />
+    <img className="mt-2.5 rounded-full
+     lg:w-[400px] lg:h-[400px]  md:w-[350px] md:h-[350px] w-[300px] h-[300px]
+     mb-1 object-cover absolute  opacity-30" src="/images/o1bg.png" alt="물"/>
+    <span className="absolute lg:text-[90px] md:text-[70px] text-[50px] text-black">| & |</span>
      </div>
    
    
@@ -164,9 +170,16 @@ function Main() {
     iconone.map((e, i) => {
       if (e.group === 1) {
         return (
-          <div className="z-10 m-auto absolute border-[1px] border-blue-300 rounded-full w-[60px] h-[60px] bg-[#CAECFF] hover:bg-[#85D3FF]" style={{left:e.left, bottom:e.bottom}}>
-            <div className="z-11 relative top-3.5 m-auto rounded-full flex text-xl justify-center" key={i}>
-              <img  className="absolute top-[78%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] object-cover w-[59px] h-[59px] opacity-30" src={e.img} alt="아이콘 배경" />
+          <div className="z-10 m-auto absolute border-[1px] border-blue-300 rounded-full
+           lg:w-[60px] lg:h-[60px]  md:w-[55px] md:h-[55px] w-[50px] h-[50px]
+           bg-[#CAECFF] hover:bg-[#85D3FF]" style={{left:e.left, bottom:e.bottom}} key={i}>
+            <div className="z-11 relative top-3.5 m-auto rounded-full flex text-xl justify-center" >
+              
+              <img  className="absolute 
+              lg:top-[78%] md:top-[450%] lg:left-[50%] md:left-[-30%] 
+              transform translate-x-[-50%] translate-y-[-50%] object-cover 
+              lg:w-[59px] lg:h-[59px] md:w-[45px] md:h-[45px] w-[35px] h-[35px]
+               opacity-30" src={e.img} alt="아이콘 배경" />
               <FontAwesomeIcon icon={e.icon} />
             </div>  
           </div>
@@ -181,8 +194,10 @@ function Main() {
     iconone.map((e, i) => {
       if (e.group === 2) {
         return (
-          <div className="z-10 m-auto absolute border-[1px] bg-[#acd7f0] rounded-full w-[60px] h-[60px] bg-[#CAECFF] hover:bg-[#85D3FF]" style={{right:e.right, top:e.top}}>
-            <div className="z-11 relative top-3.5 m-auto rounded-full flex text-xl justify-center" key={i}>
+          <div className="z-10 m-auto absolute border-[1px] bg-[#acd7f0]; rounded-full 
+          lg:w-[60px] lg:h-[60px]  md:w-[40px] md:h-[40px] w-[20px] h-[20px]
+           bg-[#CAECFF] hover:bg-[#85D3FF]" style={{right:e.right, top:e.top}} key={i}>
+            <div className="z-11 relative top-3.5 m-auto rounded-full flex text-xl justify-center" >
               <img  className="absolute top-[78%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] object-cover w-[59px] h-[59px] opacity-30" src={e.img} alt="아이콘 배경" />
               <FontAwesomeIcon icon={e.icon} />
             </div>
@@ -192,11 +207,14 @@ function Main() {
       return null;
     })
 }
-
      </div>
-   
+
 </div>
 
+<div className='flex justify-center items-center  '>
+<div className='lg:text-5xl md:text-4xl text-3xl text-blak-600  absolute bottom-40'>웹 프론트엔드 개발자 정서진입니다.</div>
+<p className='absolute  bottom-1 lg:text-[15px] text-[5px]'>본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적책임을 질 수 있습니다. (무단 도용/캡쳐 및 상업적 포함 사용을 금합니다.)</p>
+</div>
 
 
     {/* <MoonContent>
@@ -245,7 +263,7 @@ function Main() {
       </MoonWrap>
     </MoonContent>
      */}
-     <Banner />
+     
     </>
 
 

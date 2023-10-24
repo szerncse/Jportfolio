@@ -4,8 +4,10 @@ import React from 'react'
 
 
 function Detail() {
+
+  
   return (
-    <>Detail555555555555</>
+    <>Detail55</>
   )
 }
 

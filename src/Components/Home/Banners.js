@@ -99,7 +99,7 @@ useEffect(()=>{
         }}
         loop = {true}
         // 몇개씩 보이게 할건지
-        slidesPerView={1}
+        slidesPerView={4}
         navigation= {{clickable: true}}
         pagination= {{clickable: true}}
         modules={[Autoplay, Navigation, Pagination]}

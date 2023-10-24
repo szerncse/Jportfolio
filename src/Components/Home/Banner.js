@@ -41,7 +41,7 @@ const TxtData = [
   {
     title: "Hello!",
     desc: "click!",
-    desc2: "하고싶은 말..."
+    desc2: "협업중시"
 
   },
 ]
