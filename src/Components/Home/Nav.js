@@ -9,14 +9,15 @@ width: 100%;
 position: sticky;
 top: 0;
 border-bottom: 1px solid rgba 255,255,255,0.3;
-background: #fff;
+background: ${(props)=> props.theme.colors.BgColor};
 z-index: 40;
+
 `
 
 const NavWrap = styled.div`
 max-width: 1280px;
 margin: 0 auto; display: flex; justify-content: space-between;
-align-items: center; padding: 40px 2%;
+align-items: center; padding: 25px 2%;
 justify-content: flex-end
 `
 
@@ -42,7 +43,7 @@ ul{
         text-align: center;
         font-size: 23px;
         a.active{
-            color: red;
+            color: #A5DDFC;
             font-weight: bold;
         }
     }
@@ -102,10 +103,10 @@ function Nav() {
             </NavLogo>
             <NavList>
                 <ul>
-                <li>HELLO</li>
-                <li>ABOUT</li>
-                <li>Git</li>
-                <li>PROJECTS</li>
+                <li><NavLink to="/">HOME</NavLink></li>
+                <li><NavLink to="/About">ABOUT</NavLink></li>
+                <li><a href="https://github.com/szerncse">Git</a></li>
+                <li><NavLink to="/Projects">PROJECTS</NavLink></li>
                 </ul>
             </NavList>
             <NavMember>

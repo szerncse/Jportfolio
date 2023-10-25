@@ -12,6 +12,7 @@ border-bottom: 1px solid rgba 255,255,255,0.3;
 background: #fff;
 z-index: 40;
 box-shadow: 3px 3px 3px 3px gray;
+background: ${(props)=> props.theme.colors.BgColor};
 `
 
 const NavWrap = styled.div`
@@ -45,8 +46,9 @@ ul{
         flex-basis: 25%;
         text-align: center;
         justify-content: space-between;
+        font-size: 23px;
         a.active{
-            color: red;
+            color: #D38292;
             font-weight: bold;
         }
     }
@@ -101,17 +103,17 @@ function Navs() {
     <NavContent>
         <NavWrap>
             <NavLogo>
-                <NavLink>
+                <NavLink to="/">
                     <img src="./images/logo.png" alt="로고" />
                     {/* <img src="./images/logos.png" alt="로고" /> */}
                 </NavLink>
             </NavLogo>
             <NavList>
                 <ul>
-                    <li>HOME</li>
-                    <li>ABOUT</li>
-                    <li>Git</li>
-                    <li>PROJECTS</li>
+                    <li><NavLink to="/">HOME</NavLink></li>
+                    <li><NavLink to="/About">ABOUT</NavLink></li>
+                    <li><a href="https://github.com/szerncse">Git</a></li>
+                    <li><NavLink to="/Projects">PROJECTS</NavLink></li>
                 </ul>
             </NavList>
         </NavWrap>
