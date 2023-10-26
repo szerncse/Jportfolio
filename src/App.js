@@ -5,14 +5,18 @@ import Main from './Paga/Main';
 import Detail from './Paga/Detail';
 import Aside from './Components/Aside';
 import { Route, Routes } from 'react-router-dom';
-import Banner from './Components/Home/Banner';
-import Nav from './Components/Home/Nav';
-import Navs from './Components/Home/Navs';
-import Banners from './Components/Home/Banners';
+import Banner from './Home/Banner';
+import Nav from './Home/Nav';
+import Navs from './Home/Navs';
+import Banners from './Home/Banners';
 import Notfage from './Paga/Notfage';
 import About from './Paga/About';
 import Projects from './Paga/Projects';
 import { useState } from 'react';
+import Projectsfile from './Paga/Projectsfile';
+import Mains from './Paga/Mains';
+
+
 
 
 // const
@@ -58,6 +62,7 @@ function App() {
 
 <Routes>
   <Route path="/" element={<Main/>}></Route>
+  <Route path="/mains" element={<Mains/>}></Route>
   <Route path="/nav" element={<Nav/>}></Route>
   <Route path="/navs" element={<Navs/>}></Route>
   <Route path="/banner" element={<Banner/>}></Route>
@@ -66,6 +71,9 @@ function App() {
   <Route path="/*" element={<Notfage/>}></Route>
   <Route path="/about" element={<About/>}></Route>
   <Route path="/projects" element={<Projects/>}></Route>
+  <Route path="/projectsfile" element={<Projectsfile/>}></Route>
+
+
 </Routes>
   <Aside ThemeSelect={ThemeSelect} themeConfig={themeConfig}/>
 </ThemeProvider>

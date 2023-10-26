@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import Navs from '../Components/Home/Navs'
+import Navs from '../Home/Navs'
+
 
 function About() {
   return (
