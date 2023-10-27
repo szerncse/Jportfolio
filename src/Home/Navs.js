@@ -2,7 +2,9 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
+// import { useSelector } from 'react-redux';
 
+// const theme = useSelector(state => state.dark);
 
 const NavContent = styled.div`
 width: 100%;
@@ -22,7 +24,7 @@ align-items: center; padding: 10px 2%;
 `
 
 const NavLogo = styled.div`
-img{max-width:70px; height:60px; display:flex;
+img{max-width:170px; height:60px; display:flex;
     justify-content: space-evenly
 }
 
@@ -104,7 +106,12 @@ function Navs() {
         <NavWrap>
             <NavLogo>
                 <NavLink to="/">
-                    <img src="./images/logo.png" alt="로고" />
+                    {/* <img src="./images/jsj2.png" alt="로고" /> */}
+                    {(props) => props.theme.imgss.img1};
+                    {/* <img className='w-7 h-6'
+                              src={theme === 'light' ?
+                              "./images/jsj2.png" : "./images/jsj2.png"}
+                              alt="camera" /> */}
                     {/* <img src="./images/logos.png" alt="로고" /> */}
                 </NavLink>
             </NavLogo>

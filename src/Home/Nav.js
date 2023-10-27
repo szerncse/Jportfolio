@@ -23,6 +23,7 @@ justify-content: flex-end
 
 const NavLogo = styled.div`
 /* img{width:100%;} */
+
 `
 
 const NavList = styled.div`

@@ -152,11 +152,12 @@ function Mains() {
   <div className=" m-auto  border border-gray-300 rounded-full
    lg:basis-[32.5%] lg:w-[400px] lg:h-[400px] md:w-[350px] md:h-[350px] w-[300px] h-[300px]
    flex justify-center items-center bg-[#CAECFF] hover:bg-[#85D3FF] shadow-lg">
-    <img className='rounded-full' src="/images/5.png" alt="바다" />
-    <img className="mt-2.5 rounded-full
+    {/* <img className='rounded-full' src="/images/5.png" alt="바다" /> */}
+    {/* <img className="mt-2.5 rounded-full
      lg:w-[400px] lg:h-[400px]  md:w-[350px] md:h-[350px] w-[300px] h-[300px]
-     mb-1 object-cover absolute  opacity-30" src="/images/o1bg.png" alt="물"/>
-    <span className="absolute lg:text-[90px] md:text-[70px] text-[50px] text-black">| & |</span>
+     mb-1 object-cover absolute  opacity-30" 
+     src="/images/o1bg.png" alt="물"/> */}
+    <span className="absolute lg:text-[90px] md:text-[70px] text-[50px] text-black"><img src="./images/jsj.png" alt="로고" /></span>
      </div>
    
    
