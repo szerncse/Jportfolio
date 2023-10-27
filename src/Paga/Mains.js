@@ -211,6 +211,20 @@ function Mains() {
 <p className='absolute  bottom-1 lg:text-[15px] text-[5px]'>본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적책임을 질 수 있습니다. (무단 도용/캡쳐 및 상업적 포함 사용을 금합니다.) </p>
 </div>
 
+<div className="w-full j-full m-0 flex justify-center items-center mt-10 mb-10">
+<img className='w-[300px]' src="./images/400.png" alt="이미지" />
+<div className=" w-[300px] flex justify-center">네이버 블로그를 제가 원하는 대로 예쁘게 만드려고 시작하다가 HTML, CSS에 관심으로 시작해서 코드를 이용한다면 기능을 직접 구현할 수 있다는 것을 알게 되어 IT 서비스를 직접 제작하는 전문가가 되고자 도전하게 되었습니다.
+React를 이용한 웹 개발 기술을 습득하였으며, HTML, CSS, JavaScript 등 
+기본적인 웹 기술들을 자유롭게 다룰 수 있습니다.
+코드로 무언가를 만드는것은 하나하나 소장하는 듯한 즐거운 느낌이예요! 
+그래서 더 많이 만들어 나갈것입니다.
+맡은 프로젝트의 목적을 우선적으로 고려하며, 원활한 협업을 중요하게 생각해요.</div>
+</div>
+
+<div className="w-full j-full m-0 flex justify-center items-center mt-10 mb-10">
+  <img src="./images/lxjmy.png" alt="스킬" />
+</div>
+
 
     {/* <MoonContent>
       <MoonWrap>
