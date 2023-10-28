@@ -213,7 +213,7 @@ function Mains() {
 
 <div className="w-full j-full m-0 flex justify-center items-center mt-10 mb-10">
 <img className='w-[300px]' src="./images/400.png" alt="이미지" />
-<div className=" w-[300px] flex justify-center">네이버 블로그를 제가 원하는 대로 예쁘게 만드려고 시작하다가 HTML, CSS에 관심으로 시작해서 코드를 이용한다면 기능을 직접 구현할 수 있다는 것을 알게 되어 IT 서비스를 직접 제작하는 전문가가 되고자 도전하게 되었습니다.
+<div className=" w-[300px] flex justify-center ">네이버 블로그를 제가 원하는 대로 예쁘게 만드려고 시작하다가 HTML, CSS에 관심으로 시작해서 코드를 이용한다면 기능을 직접 구현할 수 있다는 것을 알게 되어 IT 서비스를 직접 제작하는 전문가가 되고자 도전하게 되었습니다.
 React를 이용한 웹 개발 기술을 습득하였으며, HTML, CSS, JavaScript 등 
 기본적인 웹 기술들을 자유롭게 다룰 수 있습니다.
 코드로 무언가를 만드는것은 하나하나 소장하는 듯한 즐거운 느낌이예요! 
@@ -222,7 +222,7 @@ React를 이용한 웹 개발 기술을 습득하였으며, HTML, CSS, JavaScrip
 </div>
 
 <div className="w-full j-full m-0 flex justify-center items-center mt-10 mb-10">
-  <img src="./images/lxjmy.png" alt="스킬" />
+  <img src="./images/xxl.png" alt="스킬" />
 </div>
 
 
