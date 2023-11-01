@@ -74,15 +74,13 @@ PROJECTS</p>
     }}
     className="mySwiper"
   >
-    <SwiperSlide style={{height: "600px"}}><img className='h-full' src="./images/1.png" alt="" /></SwiperSlide>
-    <SwiperSlide style={{height: "600px"}}><img className='h-full' src="./images/2.png" alt="" /></SwiperSlide>
-    <SwiperSlide style={{height: "600px"}}><img className='h-full' src="./images/3.png" alt="" /></SwiperSlide>
-    <SwiperSlide style={{height: "600px"}}><img className='h-full' src="./images/4.png" alt="" /></SwiperSlide>
-    <SwiperSlide style={{height: "600px"}}><img className='h-full' src="./images/5.png" alt="" /></SwiperSlide>
-    <SwiperSlide style={{height: "600px"}}><img className='h-full' src="./images/1.png" alt="" /></SwiperSlide>
-    <SwiperSlide style={{height: "600px"}}><img className='h-full' src="./images/1.png" alt="" /></SwiperSlide>
-    <SwiperSlide style={{height: "600px"}}><img className='h-full' src="./images/1.png" alt="" /></SwiperSlide>
-    <SwiperSlide style={{height: "600px"}}><img className='h-full' src="./images/1.png" alt="" /></SwiperSlide>
+    {/* <SwiperSlide style={{height: "550px"}}>
+      <img className=' w-[500px]' src="./images/1.png" alt="" /></SwiperSlide> */}
+    <SwiperSlide >
+      <img className=' w-[500px]' src="./images/2.png" alt="" /></SwiperSlide>
+    <SwiperSlide >
+      <img className=' w-[500px]' src="./images/3.png" alt="" /></SwiperSlide>
+
   </Swiper>
 
 </Swipers>

@@ -21,6 +21,10 @@ const NavWrap = styled.div`
 max-width: 1280px;
 margin: 0 auto; display: flex; justify-content: space-between;
 align-items: center; padding: 10px 2%; 
+
+@media screen and (max-width: 737px){
+   
+}
 `
 
 const NavLogo = styled.div`
@@ -36,8 +40,9 @@ justify-content: space-between;
  flex-basis: 30%;
 
 @media screen and (max-width: 1024px){
-display: none;
+    
 }
+
 ul{
     /* justify-content: start; */
     display: flex;
@@ -49,9 +54,16 @@ ul{
         text-align: center;
         justify-content: space-between;
         font-size: 23px;
+        a{
+            @media screen and (max-width: 500px){
+            font-size: 15px; flex-basis: 25%;
+            margin: 5px;
+}
+        }
         a.active{
             color: #D38292;
             font-weight: bold;
+            
         }
     }
 }
@@ -106,8 +118,8 @@ function Navs() {
         <NavWrap>
             <NavLogo>
                 <NavLink to="/">
-                    {/* <img src="./images/jsj2.png" alt="로고" /> */}
-                    {(props) => props.theme.imgss.img1};
+                    <img src="./images/jsj2.png" alt="로고" />
+                    {(props) => props.theme.imgss.img1}
                     {/* <img className='w-7 h-6'
                               src={theme === 'light' ?
                               "./images/jsj2.png" : "./images/jsj2.png"}
