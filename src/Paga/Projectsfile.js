@@ -12,6 +12,7 @@ import { NavLink } from 'react-router-dom';
 const Swipers = styled.div`
  margin: 0 auto;
 height: 100%;
+padding: 50px;
 `
 
 const swiperslide = styled.div`
@@ -39,10 +40,10 @@ function Projectsfile() {
   
 
 <Swipers>
-  <p className='text-9xl text-center'> 
+  <p className='text-7xl md:text-8xl lg:text-9xl text-center mb-10'> 
 PROJECTS</p>
 
-    <Swiper
+    <Swiper 
     slidesPerView={1}
     spaceBetween={10}
 
@@ -77,9 +78,17 @@ PROJECTS</p>
     {/* <SwiperSlide style={{height: "550px"}}>
       <img className=' w-[500px]' src="./images/1.png" alt="" /></SwiperSlide> */}
     <SwiperSlide >
-      <img className=' w-[500px]' src="./images/2.png" alt="" /></SwiperSlide>
+      <img className=' w-[500px] h-[600px]' src="./images/2.png" alt="" /></SwiperSlide>
     <SwiperSlide >
-      <img className=' w-[500px]' src="./images/3.png" alt="" /></SwiperSlide>
+      <img className=' w-[500px] h-[600px]' src="./images/3.png" alt="" /></SwiperSlide>
+    <SwiperSlide >
+      <img className=' w-[500px] h-[600px]' src="./images/2.png" alt="" /></SwiperSlide>
+    <SwiperSlide >
+      <img className=' w-[500px] h-[600px]' src="./images/3.png" alt="" /></SwiperSlide>
+    <SwiperSlide >
+      <img className=' w-[500px] h-[600px]' src="./images/2.png" alt="" /></SwiperSlide>
+    <SwiperSlide >
+      <img className=' w-[500px] h-[600px]' src="./images/3.png" alt="" /></SwiperSlide>
 
   </Swiper>
 

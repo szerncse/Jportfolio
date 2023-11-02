@@ -214,15 +214,18 @@ lg:text-5xl md:text-4xl text-3xl text-blak-600  absolute bottom-40'>웹 프론�
 {/* <p className='absolute  bottom-1 lg:text-[15px] text-[5px]'>본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적책임을 질 수 있습니다. (무단 도용/캡쳐 및 상업적 포함 사용을 금합니다.) </p> */}
 </div>
 
-<div className="w-full j-full flex justify-center items-center mt-10 mb-10 gap-[50px] md:w-[250px] lg:w-[350px] flex-col md:flex-row
-">
-<img className='w-[200px] md:w-[250px] lg:w-[350px]' src="./images/400.png" alt="이미지" />
-<div className=" basis-1  md:basis-15 lg:basis-15
+<div className="w-full flex flex-col  md:flex-row mx-auto
+justify-center items-center mt-20 md:mt-40 lg:mt-40 gap-[50px] md:w-[600px] md:h-[300px] 
+lg:w-[700px] lg:h-[350px] mb-20">
+<img className='basis-full  md:basis-1/12 lg:basis-[96]' src="./images/400.png" alt="이미지" />
+<div className=" basis-full md:text-basis-60 lg:basis-96  
+p-5 md:p-0  text-center text-xl md:text-2xl lg:text-2xl
  ">네이버 블로그를 제가 원하는 대로 예쁘게 만드려고 시작하다가 HTML, CSS에 관심으로 시작해서 코드를 이용한다면 기능을 직접 구현할 수 있다는 것을 알게 되어 IT 서비스를 직접 제작하는 전문가가 되고자 도전하게 되었습니다.
 </div>
 </div>
 
-<div className="w-full h-full m-0 flex justify-center items-center mt-10 mb-10">
+<div className="w-full  m-0 flex justify-center items-center md:mt-52 lg:mt-64 
+mb-20 md:mb-52 lg:mb-64">
   <img className=' w-[400px] h-[250px]
  lg:w-[800px] lg:h-[450px]  md:w-[600px] md:h-[300px]' src="./images/xxl.png" alt="스킬" />
 </div>
@@ -231,8 +234,9 @@ lg:text-5xl md:text-4xl text-3xl text-blak-600  absolute bottom-40'>웹 프론�
 
 <div className='w-full h-[20px] md:h-[100px] lg:h-[150px]
  m-0 flex justify-center items-center mt-10 mb-10'>
-<img className='w-full h-[200px]
- lg:w-full lg:h-[450px]  md:w-full md:h-[300px]' src="./images/photo1.png" alt="스킬" />
+<img className=' basis-full 
+ h-[150px] md:h-[250px]  lg:h-[400px]
+ ' src="./images/photo1.png" alt="스킬" />
 </div>
 
     {/* <MoonContent>
