@@ -19,8 +19,8 @@ const protdatalist = [
   {
     link: "https://hmg-szerncse.vercel.app/",
     name: "HMG클론코딩",
-    days: "1달",
-    good: "100%",
+    days: " 1달",
+    good: "클론코딩 제작 ,사용자 메인 페이지개발, 기타 드라이빙 사이트를 처음으로 제작",
     pr: "100%",
     skill: "HTML,CSS,JS",
     img: "./images/1page.png"
@@ -29,7 +29,7 @@ const protdatalist = [
     link: "https://subway-phi.vercel.app/",
     name: "subway클론코딩",
     days: "1달",
-    good: "100%",
+    good: "클론코딩 제작 ,사용자 메인 페이지개발, subway사이트를 두번째로 제작",
     pr: "100%",
     skill: "HTML,CSS,JS",
     img: "./images/2page.png"
@@ -53,13 +53,22 @@ const protdatalist = [
     img: "./images/4page.png"
   },
   {
-    link: "https://jportfolio-mu.vercel.app/",
-    name: "jportfolio",
-    days: "1달",
-    good: "100%",
-    pr: "100%",
+    link: " https://jportfolio-mu.vercel.app/",
+    name: " jportfolio",
+    days: " 1달",
+    good: " 100%",
+    pr: " 100%",
     skill: "HTML,tailwindcss,JS,React",
     img: "./images/5page.png"
+  },
+  {
+    link: " https://team-puri.vercel.app/",
+    name: " team-puri",
+    days: " 2달",
+    good: " 팀프로젝트 ,리뷰 페이지개발, 첫 팀프로젝트",
+    pr: " 100%",
+    skill: " HTML,tailwindcss,JS,React",
+    img: "./images/6page.png"
   },
 ]
 
@@ -136,6 +145,7 @@ PROJECTS</p>
                     <li>제작기간:{e.days}</li>
                     <li>기여도:{e.pr}</li>
                     <li>관련스킬:{e.skill}</li>
+                    <li>담당업무:{e.good}</li>
                     </ul>
                 </div>
                 </SwiperSlide>
