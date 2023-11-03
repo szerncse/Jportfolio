@@ -147,7 +147,7 @@ function Mains() {
     <>
       <div className="bg-white text-black max-w-full h-auto mx-auto relative  pt-10 
       pb-16 md:pb-40 lg:pb-52
-     "style={{ backgroundImage: `url('images/2.png')` }}>
+     "style={{ backgroundImage: `url('images/1.png')` }}>
 
 
         <div className="relative w-[400px] mx-auto pt-24">
@@ -160,82 +160,90 @@ function Mains() {
      mb-1 object-cover absolute  opacity-30" 
      src="/images/o1bg.png" alt="물"/> */}
             <span className="absolute w-[200px] h-[200px]
-    lg:w-[300px]  lg:h-[350px] md:w-[250px]  md:h-[300px] text-black"><img src="./images/jsj.png" alt="로고" /></span>
+    lg:w-[300px]  lg:h-[350px] md:w-[250px]  md:h-[300px] text-black">
+      <img src="./images/jsj.png" alt="로고" /></span>
           </div>
 
 
-          {
-            iconone.map((e, i) => {
-              if (e.group === 1) {
-                return (
-                  <div className="z-10 m-auto absolute border-[1px] border-blue-300 rounded-full
-           lg:w-[60px] lg:h-[60px]  md:w-[55px] md:h-[55px] w-[50px] h-[50px]
-           bg-[#CAECFF] hover:bg-[#85D3FF]" style={{ left: e.left, bottom: e.bottom }} key={i}>
-                    <div className="z-11 relative top-3.5 m-auto rounded-full flex text-xl justify-center" >
+    {
+      iconone.map((e, i) => {
+        if (e.group === 1) {
+          return (
+            <div className="z-10 m-auto absolute border-[1px] border-blue-300 rounded-full
+            lg:w-[60px] lg:h-[60px]  md:w-[55px] md:h-[55px] w-[50px] h-[50px]
+            bg-[#CAECFF] hover:bg-[#85D3FF]" style={{ left: e.left, bottom: e.bottom }} key={i}>
+              <div className="z-11 relative top-3.5 m-auto rounded-full flex text-xl justify-center" >
 
-                      <img className="absolute 
-              lg:top-[78%] md:top-[450%] lg:left-[50%] md:left-[-30%] 
-              transform translate-x-[-50%] translate-y-[-50%] object-cover 
-              lg:w-[59px] lg:h-[59px] md:w-[45px] md:h-[45px] w-[35px] h-[35px]
-               opacity-30" src={e.img} alt="아이콘 배경" />
-                      <FontAwesomeIcon icon={e.icon} />
-                    </div>
-                  </div>
-                );
-              } else {
-                return null;
-              }
-            })
-          }
+                <img className="absolute 
+                lg:top-[78%] md:top-[450%] lg:left-[50%] md:left-[-30%] 
+                transform translate-x-[-50%] translate-y-[-50%] object-cover 
+                lg:w-[59px] lg:h-[59px] md:w-[45px] md:h-[45px] w-[35px] h-[35px]
+                opacity-30" src={e.img} alt="아이콘 배경" />
+                <FontAwesomeIcon icon={e.icon} />
+              </div>
+            </div>
+          );
+        } else {
+          return null;
+        }
+      })
+    }
 
-          {
-            iconone.map((e, i) => {
-              if (e.group === 2) {
-                return (
-                  <div className="z-10 m-auto absolute border-[1px] bg-[#acd7f0]; rounded-full 
-          lg:w-[60px] lg:h-[60px]  md:w-[40px] md:h-[40px] w-[20px] h-[20px]
-           bg-[#CAECFF] hover:bg-[#85D3FF]" style={{ right: e.right, top: e.top }} key={i}>
-                    <div className="z-11 relative top-3.5 m-auto rounded-full flex text-xl justify-center" >
-                      <img className="absolute top-[78%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] object-cover w-[59px] h-[59px] opacity-30" src={e.img} alt="아이콘 배경" />
-                      <FontAwesomeIcon icon={e.icon} />
-                    </div>
-                  </div>
-                );
-              }
-              return null;
-            })
-          }
-        </div>
+    {
+      iconone.map((e, i) => {
+        if (e.group === 2) {
+          return (
+            <div className="z-10 m-auto absolute border-[1px] bg-[#acd7f0]; rounded-full 
+    lg:w-[60px] lg:h-[60px]  md:w-[40px] md:h-[40px] w-[20px] h-[20px]
+      bg-[#CAECFF] hover:bg-[#85D3FF]" 
+      style={{ right: e.right, top: e.top }} key={i}>
+              <div className="z-11 relative top-3.5 m-auto rounded-full flex text-xl justify-center" >
+                <img className="absolute top-[78%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] object-cover w-[59px] h-[59px] opacity-30" src={e.img} alt="아이콘 배경" />
+                <FontAwesomeIcon icon={e.icon} />
+              </div>
+            </div>
+          );
+        }
+        return null;
+      })
+    }
+    </div>
 
-        <div className=' text-center mt-50 pt-10'>
-          <div className=' h-[50px] lg:h-[5px] text-blak-600 bottom-5
-lg:text-5xl md:text-4xl text-3xl '>웹 프론트엔드 개발자 정서진입니다.</div>
-          {/* <p className='absolute  bottom-1 lg:text-[15px] text-[5px]'>본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적책임을 질 수 있습니다. (무단 도용/캡쳐 및 상업적 포함 사용을 금합니다.) </p> */}
-        </div>
+      <div className=' text-center mt-50 pt-10'>
+        <div className=' h-[50px] lg:h-[5px] text-blak-600 bottom-5
+        lg:text-5xl md:text-4xl text-3xl '>웹 프론트엔드 개발자 정서진입니다.</div>
+        {/* <p className='absolute  bottom-1 lg:text-[15px] text-[5px]'>본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적책임을 질 수 있습니다. (무단 도용/캡쳐 및 상업적 포함 사용을 금합니다.) </p> */}
       </div>
+    </div>
 
-      <div className="w-full flex flex-col  md:flex-row mx-auto
-        justify-center items-center mt-20 md:mt-40 lg:mt-40 gap-[50px] md:w-[600px] md:h-[300px] 
-        lg:w-[700px] lg:h-[350px] mb-20">
-        <img className='basis-full  md:basis-1/12 lg:basis-[96]' src="./images/400.png" alt="이미지" />
-        <div className=" basis-full md:text-basis-60 lg:basis-96  
-        p-5 md:p-0  text-center text-xl md:text-2xl lg:text-2xl
-        ">네이버 블로그를 제가 원하는 대로 예쁘게 만드려고 시작하다가 HTML, CSS에 관심으로 시작해서 코드를 이용한다면 기능을 직접 구현할 수 있다는 것을 알게 되어 IT 서비스를 직접 제작하는 전문가가 되고자 도전하게 되었습니다.
-        </div>
+    <div className="w-full flex flex-col  md:flex-row mx-auto
+      justify-center items-center mt-20 md:mt-40 lg:mt-40 gap-[50px]
+       md:w-[700px] md:h-[300px] 
+      lg:w-[900px] lg:h-[350px] mb-20">
+
+      <img className='basis-full w-[300px] 
+      md:basis-90 md:w-[350px] 
+      lg:basis-auto lg:w-[450px] 
+      bg-cover ' src="./images/mys.jpg" alt="이미지" />
+
+      <div className=" basis-full md:text-basis-60 lg:basis-96  
+      p-5 md:p-0  text-center text-xl md:text-2xl lg:text-2xl
+      ">네이버 블로그를 제가 원하는 대로 예쁘게 만드려고 시작하다가 HTML, CSS에 관심으로 시작해서 코드를 이용한다면 기능을 직접 구현할 수 있다는 것을 알게 되어 IT 서비스를 직접 제작하는 전문가가 되고자 도전하게 되었습니다.
       </div>
+    </div>
 
-      <div className="w-full  m-0 flex justify-center items-center md:mt-52 lg:mt-64 
-      mb-20 md:mb-52 lg:mb-64">
-        <img className=' w-[400px] h-[250px]
-        lg:w-[800px] lg:h-[450px]  md:w-[600px] md:h-[300px]' src="./images/xxl.png" alt="스킬" />
-      </div>
+    <div className="w-full  m-0 flex justify-center items-center md:mt-52 lg:mt-64 
+    mb-20 md:mb-52 lg:mb-64">
+      <img className=' w-[400px] h-[250px]
+      lg:w-[800px] lg:h-[450px]  md:w-[600px] md:h-[300px]' src="./images/xxl.png" alt="스킬" />
+    </div>
 
-      <Projectsfile />
+    <Projectsfile />
 
-      <div className='w-full '>
-        <img className=' basis-full 
-         h-[120px] md:h-[150px]  lg:h-[300px]' src="./images/photo1.png" alt="스킬" />
-      </div>
+    <div className='w-full '>
+      <img className=' basis-full 
+        h-[120px] md:h-[150px]  lg:h-[300px]' src="./images/photo1.png" alt="스킬" />
+    </div>
 
       {/* <MoonContent>
       <MoonWrap>
