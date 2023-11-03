@@ -157,7 +157,7 @@ function Mains() {
             {/* <img className='rounded-full' src="/images/5.png" alt="바다" /> */}
             {/* <img className="mt-2.5 rounded-full
      lg:w-[400px] lg:h-[400px]  md:w-[350px] md:h-[350px] w-[300px] h-[300px]
-     mb-1 object-cover absolute  opacity-30" 
+     mb-1 object-cover absolute  opacity-10" 
      src="/images/o1bg.png" alt="물"/> */}
             <span className="absolute w-[200px] h-[200px]
     lg:w-[300px]  lg:h-[350px] md:w-[250px]  md:h-[300px] text-black">
@@ -178,7 +178,7 @@ function Mains() {
                 lg:top-[78%] md:top-[450%] lg:left-[50%] md:left-[-30%] 
                 transform translate-x-[-50%] translate-y-[-50%] object-cover 
                 lg:w-[59px] lg:h-[59px] md:w-[45px] md:h-[45px] w-[35px] h-[35px]
-                opacity-30" src={e.img} alt="아이콘 배경" />
+                opacity-20" src={e.img} alt="아이콘 배경" />
                 <FontAwesomeIcon icon={e.icon} />
               </div>
             </div>
@@ -198,7 +198,7 @@ function Mains() {
       bg-[#CAECFF] hover:bg-[#85D3FF]" 
       style={{ right: e.right, top: e.top }} key={i}>
               <div className="z-11 relative top-3.5 m-auto rounded-full flex text-xl justify-center" >
-                <img className="absolute top-[78%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] object-cover w-[59px] h-[59px] opacity-30" src={e.img} alt="아이콘 배경" />
+                <img className="absolute top-[78%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] object-cover w-[59px] h-[59px] opacity-20" src={e.img} alt="아이콘 배경" />
                 <FontAwesomeIcon icon={e.icon} />
               </div>
             </div>
