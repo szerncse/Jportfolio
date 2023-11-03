@@ -10,7 +10,7 @@ import { NavLink } from 'react-router-dom';
 
 
 const Swipers = styled.div`
- margin: 0 auto;
+margin: 0 auto;
 height: 100%;
 padding: 50px;
 `
@@ -43,7 +43,7 @@ function Projectsfile() {
   <p className='text-7xl md:text-8xl lg:text-9xl text-center mb-10'> 
 PROJECTS</p>
 
-    <Swiper 
+    <Swiper
     slidesPerView={1}
     spaceBetween={10}
 
@@ -72,23 +72,45 @@ PROJECTS</p>
         slidesPerView: 4,
         spaceBetween: 50,
       },
-    }}
-    className="mySwiper"
-  >
+    }}>
+
     {/* <SwiperSlide style={{height: "550px"}}>
       <img className=' w-[500px]' src="./images/1.png" alt="" /></SwiperSlide> */}
+{/* 
     <SwiperSlide >
-      <img className=' w-[500px] h-[600px]' src="./images/2.png" alt="" /></SwiperSlide>
+    <a href="https://hmg-szerncse.vercel.app/" target="_blank"><div style={{backgroundImage:"url(./images/1page.png)", backgroundSize: "cover", backgroundPosition: "center"}} className=' w-[350px] h-[600px] object-cover;' >
+    </div>  
+    </a>
+      </SwiperSlide> */}
+      {/* contain 박스기준 세로 정렬, cover 박스기준 가로정렬 */}
+      <div className="gap-10">
+
     <SwiperSlide >
-      <img className=' w-[500px] h-[600px]' src="./images/3.png" alt="" /></SwiperSlide>
+    <a href="https://subway-phi.vercel.app/" target="_blank">
+      <div style={{backgroundImage:"url(./images/2page.png)", backgroundSize: "cover", backgroundPosition: "center"}} className='  h-[600px]'>
+      </div>
+      </a>
+      </SwiperSlide>
     <SwiperSlide >
-      <img className=' w-[500px] h-[600px]' src="./images/2.png" alt="" /></SwiperSlide>
+    <a href="https://subway-phi.vercel.app/" target="_blank">
+      <div style={{backgroundImage:"url(./images/2page.png)", backgroundSize: "cover", backgroundPosition: "center"}} className=' h-[600px]'>
+      </div>
+      </a>
+      </SwiperSlide>
     <SwiperSlide >
-      <img className=' w-[500px] h-[600px]' src="./images/3.png" alt="" /></SwiperSlide>
+    <a href="https://subway-phi.vercel.app/" target="_blank">
+      <div style={{backgroundImage:"url(./images/2page.png)", backgroundSize: "cover", backgroundPosition: "center"}} className=' h-[600px]'>
+      </div>
+      </a>
+      </SwiperSlide>
     <SwiperSlide >
-      <img className=' w-[500px] h-[600px]' src="./images/2.png" alt="" /></SwiperSlide>
-    <SwiperSlide >
-      <img className=' w-[500px] h-[600px]' src="./images/3.png" alt="" /></SwiperSlide>
+    <a href="https://subway-phi.vercel.app/" target="_blank">
+      <div style={{backgroundImage:"url(./images/2page.png)", backgroundSize: "cover", backgroundPosition: "center"}} className=' h-[600px]'>
+      </div>
+      </a>
+      </SwiperSlide>
+  
+      </div>
 
   </Swiper>
 
