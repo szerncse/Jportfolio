@@ -70,6 +70,15 @@ const protdatalist = [
     skill: " HTML,tailwindcss,JS,React",
     img: "./images/6page.png"
   },
+  {
+    link: " https://luckyday-five.vercel.app/",
+    name: " luckyday",
+    days: " 2달",
+    good: " 럭키",
+    pr: " 100%",
+    skill: " HTML,tailwindcss,JS,React",
+    img: "./images/7page.png"
+  },
 ]
 
 
@@ -93,7 +102,7 @@ PROJECTS</p>
     modules={[Autoplay]}
     // autoplay={true}
     autoplay={{
-      delay: 1500,
+      delay: 1200,
     }}
     loop={true}
 
