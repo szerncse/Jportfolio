@@ -15,6 +15,7 @@ import Projects from './Paga/Projects';
 import { useState } from 'react';
 import Projectsfile from './Paga/Projectsfile';
 import Mains from './Paga/Mains';
+import Different from './Home/Different';
 
 
 
@@ -67,6 +68,7 @@ function App() {
   <Route path="/mains" element={<Mains/>}></Route>
   <Route path="/nav" element={<Nav/>}></Route>
   <Route path="/navs" element={<Navs/>}></Route>
+  <Route path="/different" element={<Different/>}></Route>
   <Route path="/banner" element={<Banner/>}></Route>
   <Route path="/banners" element={<Banners/>}></Route>
   <Route path="/detail" element={<Detail/>}></Route>

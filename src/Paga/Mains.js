@@ -3,6 +3,7 @@ import { faArrowUpFromBracket, faComment, faFileContract, faQuestion } from '@fo
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import Projectsfile from './Projectsfile';
+import Different from '../Home/Different';
 
 
 const iconone = [{
@@ -147,18 +148,19 @@ function Mains() {
     <>
       <div className="bg-white text-black max-w-full h-auto mx-auto relative  pt-10 
       pb-16 md:pb-40 lg:pb-52
-     "style={{ backgroundImage: `url('images/1.png')` }}>
+     "style={{ backgroundImage: `url('images/.jpg')`
+      }}>
 
 
         <div className="relative w-[400px] mx-auto pt-24">
           <div className=" m-auto  border border-gray-300 rounded-full
    lg:basis-[32.5%] lg:w-[400px] lg:h-[400px] md:w-[350px] md:h-[350px] w-[300px] h-[300px]
    flex justify-center items-center bg-[#CAECFF] hover:bg-[#85D3FF] shadow-lg">
-            {/* <img className='rounded-full' src="/images/5.png" alt="바다" /> */}
-            {/* <img className="mt-2.5 rounded-full
+            <img className='rounded-full' src="/images/5.png" alt="바다" />
+            <img className="mt-2.5 rounded-full
      lg:w-[400px] lg:h-[400px]  md:w-[350px] md:h-[350px] w-[300px] h-[300px]
      mb-1 object-cover absolute  opacity-10" 
-     src="/images/o1bg.png" alt="물"/> */}
+     src="/images/o1bg.png" alt="물"/>
             <span className="absolute w-[200px] h-[200px]
     lg:w-[300px]  lg:h-[350px] md:w-[250px]  md:h-[300px] text-black">
       <img src="./images/jsj.png" alt="로고" /></span>
@@ -170,14 +172,14 @@ function Mains() {
         if (e.group === 1) {
           return (
             <div className="z-10 m-auto absolute border-[1px] border-blue-300 rounded-full
-            lg:w-[60px] lg:h-[60px]  md:w-[55px] md:h-[55px] w-[50px] h-[50px]
+        lg:w-[60px] lg:h-[60px]  md:w-[55px] md:h-[55px] w-[50px] h-[50px]
             bg-[#CAECFF] hover:bg-[#85D3FF]" style={{ left: e.left, bottom: e.bottom }} key={i}>
               <div className="z-11 relative top-3.5 m-auto rounded-full flex text-xl justify-center" >
 
                 <img className="absolute 
                 lg:top-[78%] md:top-[450%] lg:left-[50%] md:left-[-30%] 
-                transform translate-x-[-50%] translate-y-[-50%] object-cover 
-                lg:w-[59px] lg:h-[59px] md:w-[45px] md:h-[45px] w-[35px] h-[35px]
+            transform translate-x-[-50%] translate-y-[-50%] object-cover 
+        lg:w-[60px] lg:h-[60px] md:w-[55px] md:h-[55px] w-[50px] h-[50px]
                 opacity-20" src={e.img} alt="아이콘 배경" />
                 <FontAwesomeIcon icon={e.icon} />
               </div>
@@ -194,11 +196,13 @@ function Mains() {
         if (e.group === 2) {
           return (
             <div className="z-10 m-auto absolute border-[1px] bg-[#acd7f0]; rounded-full 
-    lg:w-[60px] lg:h-[60px]  md:w-[40px] md:h-[40px] w-[20px] h-[20px]
+    lg:w-[60px] lg:h-[60px]  md:w-[55px] md:h-[55px] w-[50px] h-[50px]
       bg-[#CAECFF] hover:bg-[#85D3FF]" 
       style={{ right: e.right, top: e.top }} key={i}>
               <div className="z-11 relative top-3.5 m-auto rounded-full flex text-xl justify-center" >
-                <img className="absolute top-[78%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] object-cover w-[59px] h-[59px] opacity-20" src={e.img} alt="아이콘 배경" />
+                <img className="absolute top-[78%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] object-cover 
+        lg:w-[60px] lg:h-[60px] md:w-[55px] md:h-[55px] w-[50px] h-[50px]
+         opacity-20" src={e.img} alt="아이콘 배경" />
                 <FontAwesomeIcon icon={e.icon} />
               </div>
             </div>
@@ -232,13 +236,11 @@ function Mains() {
       </div>
     </div>
 
-    <div className="w-full  m-0 flex justify-center items-center md:mt-52 lg:mt-64 
-    mb-20 md:mb-52 lg:mb-64">
-      <img className=' w-[400px] h-[250px]
-      lg:w-[800px] lg:h-[450px]  md:w-[600px] md:h-[300px]' src="./images/xxl.png" alt="스킬" />
-    </div>
-
+    <Different/>
+    <div className="w-5 h-5"></div>
     <Projectsfile />
+   
+
 
     <div className='w-full '>
       <img className=' basis-full 

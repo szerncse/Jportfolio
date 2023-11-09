@@ -73,7 +73,7 @@ const protdatalist = [
   {
     link: " https://luckyday-five.vercel.app/",
     name: " luckyday",
-    days: " 2달",
+    days: " 1달",
     good: " 럭키",
     pr: " 100%",
     skill: " HTML,tailwindcss,JS,React",
