@@ -177,11 +177,12 @@ function Mains() {
               <div className="z-11 relative top-3.5 m-auto rounded-full flex text-xl justify-center" >
 
                 <img className="absolute 
-                lg:top-[78%] md:top-[450%] lg:left-[50%] md:left-[-30%] 
+                lg:top-[58%] md:top-[450%] lg:left-[50%] md:left-[-30%] 
             transform translate-x-[-50%] translate-y-[-50%] object-cover 
-        lg:w-[60px] lg:h-[60px] md:w-[55px] md:h-[55px] w-[50px] h-[50px]
+        lg:w-[60px] lg:h-[60px] md:w-[55px] md:h-[55px] w-[150px] h-[50px]
                 opacity-20" src={e.img} alt="아이콘 배경" />
-                <FontAwesomeIcon icon={e.icon} />
+                {/* <FontAwesomeIcon icon={e.icon} /> */}
+                <FontAwesomeIcon icon={e.icon} style={{ width: '30px', height: '30px ' }} />
               </div>
             </div>
           );
@@ -200,10 +201,11 @@ function Mains() {
       bg-[#CAECFF] hover:bg-[#85D3FF]" 
       style={{ right: e.right, top: e.top }} key={i}>
               <div className="z-11 relative top-3.5 m-auto rounded-full flex text-xl justify-center" >
-                <img className="absolute top-[78%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] object-cover 
+                <img className="absolute top-[58%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] object-cover 
         lg:w-[60px] lg:h-[60px] md:w-[55px] md:h-[55px] w-[50px] h-[50px]
          opacity-20" src={e.img} alt="아이콘 배경" />
-                <FontAwesomeIcon icon={e.icon} />
+                {/* <FontAwesomeIcon icon={e.icon} /> */}
+                <FontAwesomeIcon icon={e.icon} style={{ width: '25px', height: '25px ' }} />
               </div>
             </div>
           );
@@ -244,7 +246,7 @@ function Mains() {
 
     <div className='w-full'>
   <img className='basis-full h-[120px] md:h-[150px] lg:h-[250px] hidden md:block' src="./images/photo1.png" alt="스킬" style={{ objectFit: 'cover', width: '100%' }}/>
-  <img className='basis-full h-[120px] w-[900px] sm:w-[900px] md:h-[150px]  lg:h-[300px] block md:hidden' src="./images/photo2.png" alt="스킬" />
+  <img className='basis-full h-[120px] w-[900px] sm:w-[100px] md:h-[150px]  lg:h-[300px] block md:hidden' src="./images/photo2.png" alt="스킬" />
 </div>
       {/* <MoonContent>
       <MoonWrap>
