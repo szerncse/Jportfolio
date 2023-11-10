@@ -246,7 +246,7 @@ function Mains() {
 
     <div className='w-full'>
   <img className='basis-full h-[120px] md:h-[150px] lg:h-[250px] hidden md:block' src="./images/photo1.png" alt="스킬" style={{ objectFit: 'cover', width: '100%' }}/>
-  <img className='basis-full h-[120px] w-[900px] sm:w-[100px] md:h-[150px]  lg:h-[300px] block md:hidden' src="./images/photo2.png" alt="스킬" />
+  <img className='basis-full h-[120px] w-[900px] sm:w-[900px] md:h-[150px]  lg:h-[300px] block md:hidden' src="./images/photo2.png" alt="스킬" />
 </div>
       {/* <MoonContent>
       <MoonWrap>
