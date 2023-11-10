@@ -148,7 +148,7 @@ function Mains() {
     <>
       <div className="bg-white text-black max-w-full h-auto mx-auto relative  pt-10 
       pb-16 md:pb-40 lg:pb-52
-     "style={{ backgroundImage: `url('images/.jpg')`
+     "style={{  backgroundImage: `url('images/.png')`
       }}>
 
 
@@ -213,7 +213,7 @@ function Mains() {
     }
     </div>
 
-      <div className=' text-center mt-50 pt-10'>
+      <div className=' text-center pt-10 mt-5 md:mt-8 lg:mt-14'>
         <div className=' h-[50px] lg:h-[5px] text-blak-600 bottom-5
         lg:text-5xl md:text-4xl text-3xl '>웹 프론트엔드 개발자 정서진입니다.</div>
         {/* <p className='absolute  bottom-1 lg:text-[15px] text-[5px]'>본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적책임을 질 수 있습니다. (무단 도용/캡쳐 및 상업적 포함 사용을 금합니다.) </p> */}
@@ -242,11 +242,10 @@ function Mains() {
    
 
 
-    <div className='w-full '>
-      <img className=' basis-full 
-        h-[120px] md:h-[150px]  lg:h-[300px]' src="./images/photo1.png" alt="스킬" />
-    </div>
-
+    <div className='w-full'>
+  <img className='basis-full h-[120px] md:h-[150px] lg:h-[250px] hidden md:block' src="./images/photo1.png" alt="스킬" style={{ objectFit: 'cover', width: '100%' }}/>
+  <img className='basis-full h-[120px] w-[900px] sm:w-[900px] md:h-[150px]  lg:h-[300px] block md:hidden' src="./images/photo2.png" alt="스킬" />
+</div>
       {/* <MoonContent>
       <MoonWrap>
         <Moonmain>
