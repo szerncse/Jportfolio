@@ -6,7 +6,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Autoplay, Pagination } from 'swiper/modules'
-import { NavLink } from 'react-router-dom';
 import { data } from 'autoprefixer';
 
 
@@ -84,9 +83,6 @@ const protdatalist = [
 
 function Projectsfile() {
 
-//  const [protdatalist, setProtdatalist] = useState();
-
-
   return (
     <>
   
@@ -129,15 +125,6 @@ PROJECTS</p>
       },
     }}>
 
-    {/* <SwiperSlide style={{height: "550px"}}>
-      <img className=' w-[500px]' src="./images/1.png" alt="" /></SwiperSlide> */}
-{/* 
-    <SwiperSlide >
-    <a href="https://hmg-szerncse.vercel.app/" target="_blank"><div style={{backgroundImage:"url(./images/1page.png)", backgroundSize: "cover", backgroundPosition: "center"}} className=' w-[350px] h-[600px] object-cover;' >
-    </div>  
-    </a>
-      </SwiperSlide> */}
-      {/* contain 박스기준 세로 정렬, cover 박스기준 가로정렬 */}
      
 
  
@@ -146,7 +133,7 @@ PROJECTS</p>
             return(
               <SwiperSlide className='relative group'  key={i}>
               <a href={e.link} target="_blank" rel="noreferrer">
-                <div style={{backgroundImage: `url(${e.img})`, backgroundSize: "cover", backgroundPosition: "center"}} className='  h-[600px]'></div></a>
+                <div style={{backgroundImage: `url(${e.img})`, backgroundSize: "cover", backgroundPosition: "center"}} className='  h-[600px] border'></div></a>
                 <div className="absolute w-full h-full bg-black/50 duration-500 
                  left-0 top-[100%] group-hover:top-40 z-20">
                   <ul className='text-xl text-cyan-50 text-left my-10 p-5 overflow-wrap break-all'>

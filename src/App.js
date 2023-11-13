@@ -20,8 +20,6 @@ import Different from './Home/Different';
 
 
 
-// const
-
 
 
 

@@ -119,7 +119,7 @@ function Navs() {
             <NavLogo>
                 <NavLink to="/">
                     <img src="./images/jsj2.png" alt="로고" />
-                    {(props) => props.theme.imgss.img1}
+                    {/* {(props) => props.theme.imgss.img1} */}
                     {/* <img className='w-7 h-6'
                               src={theme === 'light' ?
                               "./images/jsj2.png" : "./images/jsj2.png"}

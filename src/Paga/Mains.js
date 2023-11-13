@@ -16,7 +16,7 @@ const iconone = [{
 },
 {
   "icon": faQuestion,
-  "link": "https://github.com/szerncse",
+  "link": "",
   "left": "25.5rem",
   "bottom": "21rem",
   "img": './images/o1bg.png',
@@ -24,7 +24,7 @@ const iconone = [{
 },
 {
   "icon": faFileContract,
-  "link": "https://github.com/szerncse",
+  "link": "",
   "left": "30rem",
   "bottom": "15rem",
   "img": './images/o1bg.png',
@@ -32,7 +32,7 @@ const iconone = [{
 },
 {
   "icon": faComment,
-  "link": "https://github.com/szerncse",
+  "link": "",
   "right": "30rem",
   "top": "19rem",
   "img": './images/o1bg.png',
@@ -40,7 +40,7 @@ const iconone = [{
 },
 {
   "icon": faInstagram,
-  "link": "https://github.com/szerncse",
+  "link": "",
   "right": "27rem",
   "top": "25rem",
   "img": './images/o1bg.png',
@@ -48,7 +48,7 @@ const iconone = [{
 },
 {
   "icon": faArrowUpFromBracket,
-  "link": "https://github.com/szerncse",
+  "link": "",
   "right": "23.5rem",
   "top": "31rem",
   "img": './images/o1bg.png',
@@ -152,8 +152,8 @@ function Mains() {
       }}>
 
 
-        <div className="relative w-[400px] mx-auto pt-24">
-          <div className=" m-auto  border border-gray-300 rounded-full
+        <div className="relative w-11/12 sm:w-8/12 lg:w-4/12 mx-auto pt-24">
+          <div className=" mx-auto  border border-gray-300 rounded-full
    lg:basis-[32.5%] lg:w-[400px] lg:h-[400px] md:w-[350px] md:h-[350px] w-[300px] h-[300px]
    flex justify-center items-center bg-[#CAECFF] hover:bg-[#85D3FF] shadow-lg">
             <img className='rounded-full' src="/images/5.png" alt="바다" />
@@ -165,25 +165,20 @@ function Mains() {
     lg:w-[300px]  lg:h-[350px] md:w-[250px]  md:h-[300px] text-black">
       <img src="./images/jsj.png" alt="로고" /></span>
           </div>
-
-
+    <div className="absolute top-0 right-0">
     {
       iconone.map((e, i) => {
         if (e.group === 1) {
           return (
-            <div className="z-10 m-auto absolute border-[1px] border-blue-300 rounded-full
-        lg:w-[60px] lg:h-[60px]  md:w-[55px] md:h-[55px] w-[50px] h-[50px]
-            bg-[#CAECFF] hover:bg-[#85D3FF]" style={{ left: e.left, bottom: e.bottom }} key={i}>
-              <div className="z-11 relative top-3.5 m-auto rounded-full flex text-xl justify-center" >
-
-                <img className="absolute 
-                lg:top-[58%] md:top-[450%] lg:left-[50%] md:left-[-30%] 
-            transform translate-x-[-50%] translate-y-[-50%] object-cover 
+            <div className="z-10  border-[1px] border-blue-300 rounded-full
+        lg:w-[60px] lg:h-[60px]  md:w-[55px] md:h-[55px] w-[50px] h-[50px] relative
+            bg-[#CAECFF] hover:bg-[#85D3FF]"  key={i} style={{marginLeft: -50 + (i * 60), marginTop: 10 + (i * 10)}}>
+               <a href={e.link}><img className=" object-cover
         lg:w-[60px] lg:h-[60px] md:w-[55px] md:h-[55px] w-[150px] h-[50px]
                 opacity-20" src={e.img} alt="아이콘 배경" />
+                
                 {/* <FontAwesomeIcon icon={e.icon} /> */}
-                <FontAwesomeIcon icon={e.icon} style={{ width: '30px', height: '30px ' }} />
-              </div>
+                <FontAwesomeIcon icon={e.icon} style={{ width: '25px', height: '25px ' }} className='absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4' /></a> 
             </div>
           );
         } else {
@@ -191,28 +186,31 @@ function Mains() {
         }
       })
     }
-
+    </div>
+    
+    <div className="absolute left-[44px] bottom-[-44px]">
+        
     {
       iconone.map((e, i) => {
         if (e.group === 2) {
           return (
-            <div className="z-10 m-auto absolute border-[1px] bg-[#acd7f0]; rounded-full 
-    lg:w-[60px] lg:h-[60px]  md:w-[55px] md:h-[55px] w-[50px] h-[50px]
-      bg-[#CAECFF] hover:bg-[#85D3FF]" 
-      style={{ right: e.right, top: e.top }} key={i}>
-              <div className="z-11 relative top-3.5 m-auto rounded-full flex text-xl justify-center" >
-                <img className="absolute top-[58%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] object-cover 
-        lg:w-[60px] lg:h-[60px] md:w-[55px] md:h-[55px] w-[50px] h-[50px]
-         opacity-20" src={e.img} alt="아이콘 배경" />
+            <div className="z-10  border-[1px] border-blue-300 rounded-full
+            lg:w-[60px] lg:h-[60px]  md:w-[55px] md:h-[55px] w-[50px] h-[50px] relative
+                bg-[#CAECFF] hover:bg-[#85D3FF]" 
+       key={i} style={{marginLeft: 0 + ((i-4) * 55), marginTop: 20 + (i-2 * 5)}}>
+                <a href={e.link}><img className="object-cover
+        lg:w-[60px] lg:h-[60px] md:w-[55px] md:h-[55px] w-[150px] h-[50px]
+                opacity-20" src={e.img} alt="아이콘 배경" />
                 {/* <FontAwesomeIcon icon={e.icon} /> */}
-                <FontAwesomeIcon icon={e.icon} style={{ width: '25px', height: '25px ' }} />
-              </div>
+                <FontAwesomeIcon icon={e.icon} style={{ width: '25px', height: '25px ' }} className='absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4' /></a>
             </div>
           );
         }
         return null;
       })
     }
+    </div>
+
     </div>
 
       <div className=' text-center pt-10 mt-5 md:mt-8 lg:mt-14'>
@@ -227,7 +225,7 @@ function Mains() {
        md:w-[700px] md:h-[300px] 
       lg:w-[900px] lg:h-[350px] mb-20">
 
-      <img className='basis-full w-[300px] 
+      <img className='basis-full w-[300px] border
       md:basis-90 md:w-[350px] 
       lg:basis-auto lg:w-[450px] 
       bg-cover ' src="./images/mys.jpg" alt="이미지" />
