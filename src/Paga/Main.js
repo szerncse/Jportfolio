@@ -1,9 +1,10 @@
 import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faArrowUpFromBracket, faComment, faFileContract, faQuestion } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpFromBracket, faComment, faCube, faFileContract, faQuestion } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import Projectsfile from './Projectsfile';
 import Different from '../Home/Different';
+import About from './About';
 
 
 const iconone = [{
@@ -154,13 +155,30 @@ function Main() {
         </div>
       </div>
       </div>
-      
+
+      {/* <About /> */}
+      <div className='flex justify-center gap-12 mb-56' >
+
+     <ul className='text-3xl md:text-4xl'><FontAwesomeIcon icon={faGithub} />
+     <a href="https://github.com/szerncse"> 깃허브</a></ul>
+        <ul className='text-3xl md:text-4xl text-sky-500'>
+        <FontAwesomeIcon icon={faCube} /><span className="text-black">노션</span>  </ul>
+        <ul className='text-3xl md:text-4xl text-yellow-300'>
+        <FontAwesomeIcon icon={faComment} /><span className="text-black">카카오</span>
+        </ul>
+     
+        </div>
+          
+    
       <div className=" skill S">
       <Different/></div>
 
-
+     
+        
       <div className=" project P">
       <Projectsfile/></div>
+
+   
   
   
       <div className='w-full'>
