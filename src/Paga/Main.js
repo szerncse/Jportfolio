@@ -62,7 +62,7 @@ function Main() {
     return (
       <>
         <div className="bg-white text-black max-w-full h-auto mx-auto relative  pt-10 
-        pb-16 md:pb-40 lg:pb-52 home
+        pb-16 md:pb-40 lg:pb-52 home H
        "style={{  backgroundImage: `url('images/.png')`
         }}>
   
@@ -137,7 +137,7 @@ function Main() {
   
 
   <div className='w-full'>
-      <div className='text-5xl md:text-6xl lg:text-7xl text-center mb-10 about'>about</div>
+      <div className='text-5xl md:text-6xl lg:text-7xl text-center mb-10 about A'>about</div>
       <div className="w-full flex flex-col  md:flex-row mx-auto
         justify-center items-center mt-20 md:mt-20 lg:mt-40 gap-[50px]
          md:w-[700px] md:h-[300px] 
@@ -155,13 +155,11 @@ function Main() {
       </div>
       </div>
       
-      <div className=" skill">
+      <div className=" skill S">
       <Different/></div>
 
 
-      <div className=" project">
-      <Projectsfile/></div>
-      <div className=" P">
+      <div className=" project P">
       <Projectsfile/></div>
   
   

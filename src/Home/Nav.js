@@ -108,27 +108,30 @@ console.log(test)
                     <li  onClick={()=>{
                         handleClick('home')
                     }} className='cursor-pointer hidden md:inline'>HOME</li>
-                    <li onClick={()=>{
-                        handleClick('H')
-                    }} className='cursor-pointer md:hidden'>H</li>
+                        <li onClick={()=>{
+                            handleClick('H')
+                        }} className='cursor-pointer md:hidden'>H</li>
+
                     <li  onClick={()=>{
                         handleClick('about')
                     }} className='cursor-pointer hidden md:inline'>ABOUT</li>
-                     <li onClick={()=>{
-                        handleClick('A')
-                    }} className='cursor-pointer md:hidden'>A</li>
+                        <li onClick={()=>{
+                            handleClick('A')
+                        }} className='cursor-pointer md:hidden'>A</li>
+                    
                     <li className='cursor-pointer hidden md:inline' onClick={()=>{
                         handleClick('skill')
                     }}>SKILL</li>
-                     <li onClick={()=>{
-                        handleClick('S')
-                    }} className='cursor-pointer md:hidden'>S</li>
+                        <li onClick={()=>{
+                            handleClick('S')
+                        }} className='cursor-pointer md:hidden'>S</li>
+
                     <li  onClick={()=>{
                         handleClick('project')
                     }} className='cursor-pointer hidden md:inline'>PROJECTS</li>
-                     <li onClick={()=>{
-                        handleClick('P')
-                    }} className='cursor-pointer md:hidden'>P</li>
+                        <li onClick={()=>{
+                            handleClick('P')
+                        }} className='cursor-pointer md:hidden'>P</li>
                 </ul>
             </NavList>
         </NavWrap>
