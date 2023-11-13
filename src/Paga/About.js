@@ -7,7 +7,8 @@ function About() {
   return (
     <>
     <Navs />
-    About
+    <div className=''></div>
+   <img src="./images/xxl.png" alt="xxl.png" />
     
     </>
   )

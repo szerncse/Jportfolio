@@ -1,21 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import styled, { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 import Main from './Paga/Main';
-import Detail from './Paga/Detail';
 import Aside from './Components/Aside';
-import { Route, Routes } from 'react-router-dom';
-import Banner from './Home/Banner';
+
 import Nav from './Home/Nav';
-import Navs from './Home/Navs';
-import Banners from './Home/Banners';
-import Notfage from './Paga/Notfage';
-import About from './Paga/About';
-import Projects from './Paga/Projects';
-import { useState } from 'react';
-import Projectsfile from './Paga/Projectsfile';
-import Mains from './Paga/Mains';
-import Different from './Home/Different';
+
+import { useRef, useState } from 'react';
 
 
 
@@ -26,7 +16,24 @@ import Different from './Home/Different';
 
 
 function App() {
+  const ref = useRef(null);
+
+  const handleClick = (e) => {
+    // const scrollTop = document.querySelector("."+e).scrollTop()
+    const element = document.querySelector("."+e)
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({block:'start', behavior: 'smooth' });
+      
+    }
+    
+  }
+
+
+
+
   
+
   const light = {
     colors : {
       Primary : "orange",
@@ -58,27 +65,11 @@ function App() {
 
   return (
     <>
-<ThemeProvider theme={DarkMode}>
-
-
-<Routes>
-  <Route path="/" element={<Main/>}></Route>
-  <Route path="/mains" element={<Mains/>}></Route>
-  <Route path="/nav" element={<Nav/>}></Route>
-  <Route path="/navs" element={<Navs/>}></Route>
-  <Route path="/different" element={<Different/>}></Route>
-  <Route path="/banner" element={<Banner/>}></Route>
-  <Route path="/banners" element={<Banners/>}></Route>
-  <Route path="/detail" element={<Detail/>}></Route>
-  <Route path="/*" element={<Notfage/>}></Route>
-  <Route path="/about" element={<About/>}></Route>
-  <Route path="/projects" element={<Projects/>}></Route>
-  <Route path="/projectsfile" element={<Projectsfile/>}></Route>
-
-
-</Routes>
-  <Aside ThemeSelect={ThemeSelect} themeConfig={themeConfig}/>
-</ThemeProvider>
+      <ThemeProvider theme={DarkMode}>
+        <Nav handleClick={handleClick} />
+        <Main />
+        <Aside ThemeSelect={ThemeSelect} themeConfig={themeConfig}/>
+      </ThemeProvider>
     </>
   );
 }

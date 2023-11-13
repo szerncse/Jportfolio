@@ -88,7 +88,7 @@ function Projectsfile() {
   
 
 <Swipers>
-  <p className='text-7xl md:text-8xl lg:text-9xl text-center mb-10'> 
+  <p className='text-6xl md:text-7xl lg:text-8xl text-center mb-10'> 
 PROJECTS</p>
 
     <Swiper

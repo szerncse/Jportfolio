@@ -31,7 +31,7 @@ margin-bottom: 1.5rem;
 
 `
 const Title = styled.h3`
-font-size: 2rem;
+font-size: 3rem;
 font-weight: bold;
 margin-bottom: 1rem;
 position: relative;
@@ -40,15 +40,15 @@ position: relative;
     position: absolute;
     width: 10%;
     height: 2px;
-    background: #111;
-    left: 50%; bottom: 10%; transform: translate(-50%, -50%);
+    /* background: #111;
+    left: 50%; bottom: 10%; transform: translate(-50%, -50%); */
     /* left: 40%; top: 0; */
 }
 `
-const Desc = styled.p`
-font-size: 0.875rem;
-color: #a0a0a0;
-`
+// const Desc = styled.p`
+// font-size: 0.875rem;
+// color: #a0a0a0;
+// `
 const ContentGrid = styled.div`
 flex-basis: 100%;
 padding: 48px 0;
@@ -95,22 +95,22 @@ function Different() {
 
     const data = [
         {
-            "title" : "birth date",
+            "title" : "생년월",
             "number" : "199404",
             "desc" : "hello"
         },
         {
-            "title" : "Frontend",
+            "title" : "프론트엔드",
             "number" : "800",
             "desc" : "html,css,styled-component ,tailwindcss, scss ,JavaScript / TypeScript,React / Next.js"
         },
         {
-            "title" : "backend",
+            "title" : "데이터베이스",
             "number" : "700",
             "desc" : "node.js,DataBase,MongoDB, Firebase,MySQL"
         },
         {
-            "title" : "Collaboration&Tools",
+            "title" : "그외 작업&Tools",
             "number" : "700",
             "desc" : "figma,slack,npm,yarn,Git, Github,Notion,Vercel"
         }
@@ -121,7 +121,7 @@ function Different() {
         <ContainerWrap>
             <ContentTitle>
             <Title>SKILL</Title>
-            <Desc>my skill experience</Desc>
+            {/* <Desc>my skill experience</Desc> */}
             </ContentTitle>
                  <ContentGrid>
 {/* 스타일 컴포넌트는 아이디가 클래스면 직접줄수 없음 */}
