@@ -74,14 +74,14 @@ function Main() {
      flex justify-center items-center bg-[#CAECFF] hover:bg-[#85D3FF] shadow-lg">
               <img className='rounded-full' src="/images/5.png" alt="바다" />
               <img className="mt-2.5 rounded-full
-       lg:w-[400px] lg:h-[400px]  md:w-[350px] md:h-[350px] w-[300px] h-[300px]
+       lg:w-[410px] lg:h-[410px]  md:w-[350px] md:h-[350px] w-[300px] h-[300px]
        mb-1 object-cover absolute  opacity-10" 
        src="/images/o1bg.png" alt="물"/>
               <span className="absolute w-[200px] h-[200px]
       lg:w-[300px]  lg:h-[350px] md:w-[250px]  md:h-[300px] text-black">
         <img src="./images/jsj.png" alt="로고" /></span>
             </div>
-      <div className="absolute top-0 right-0">
+      <div className="absolute top-0 right-0 hidden md:block lg:hidden">
       {
         iconone.map((e, i) => {
           if (e.group === 1) {
@@ -104,7 +104,7 @@ function Main() {
       }
       </div>
       
-      <div className="absolute left-[44px] bottom-[-44px]">
+      <div className="absolute left-[44px] bottom-[-44px] hidden md:block lg:hidden">
           
       {
         iconone.map((e, i) => {

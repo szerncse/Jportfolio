@@ -107,19 +107,19 @@ console.log(test)
                 <ul>
                     <li  onClick={()=>{
                         handleClick('home')
-                    }} className='cursor-pointer hidden md:inline'>HOME</li>
+                    }} className='cursor-pointer hidden lg:inline'>HOME</li>
                         <li onClick={()=>{
                             handleClick('H')
                         }} className='cursor-pointer md:hidden'>H</li>
 
                     <li  onClick={()=>{
                         handleClick('about')
-                    }} className='cursor-pointer hidden md:inline'>ABOUT</li>
+                    }} className='cursor-pointer hidden lg:inline'>ABOUT</li>
                         <li onClick={()=>{
                             handleClick('A')
                         }} className='cursor-pointer md:hidden'>A</li>
                     
-                    <li className='cursor-pointer hidden md:inline' onClick={()=>{
+                    <li className='cursor-pointer hidden lg:inline' onClick={()=>{
                         handleClick('skill')
                     }}>SKILL</li>
                         <li onClick={()=>{
@@ -128,7 +128,7 @@ console.log(test)
 
                     <li  onClick={()=>{
                         handleClick('project')
-                    }} className='cursor-pointer hidden md:inline'>PROJECTS</li>
+                    }} className='cursor-pointer hidden lg:inline'>PROJECTS</li>
                         <li onClick={()=>{
                             handleClick('P')
                         }} className='cursor-pointer md:hidden'>P</li>
