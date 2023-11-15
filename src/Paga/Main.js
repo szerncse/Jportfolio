@@ -9,7 +9,7 @@ import About from './About';
 
 const iconone = [{
   "icon": faGithub,
-  "link": "https://github.com/szerncse",
+  "link": "https://github.com/szerncse/",
   "left": "21rem",
   "bottom": "27rem",
   "img": './images/o1bg.png',
@@ -160,7 +160,7 @@ function Main() {
       <div className='flex justify-center gap-12 mb-56' >
 
      <ul className='text-3xl md:text-4xl'><FontAwesomeIcon icon={faGithub} />
-     <a href="https://github.com/szerncse"> 깃허브</a></ul>
+     <a href="https://github.com/szerncse/" target="_blank"> 깃허브</a></ul>
         <ul className='text-3xl md:text-4xl text-sky-500'>
         <FontAwesomeIcon icon={faCube} /><span className="text-black">노션</span>  </ul>
         <ul className='text-3xl md:text-4xl text-yellow-300'>
