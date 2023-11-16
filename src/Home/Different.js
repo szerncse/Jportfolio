@@ -33,10 +33,11 @@ margin-bottom: 1.5rem;
 
 `
 const Title = styled.h3`
-font-size: 3rem;
+font-size: 4rem;
 font-weight: bold;
 margin-bottom: 1rem;
 position: relative;
+text-shadow : -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
 &::after{
     content: "";
     position: absolute;
@@ -67,9 +68,12 @@ ul{
         @media screen and (min-width: 1024px){
             flex-basis: 25%;
         }
-        p:first-child{font-size: 1.25rem}
-        p:last-child{font-size: 1rem; padding-bottom: 2rem;}
-        span{font-size: 60px; padding-top: 20px; display: block;}
+        p:first-child{font-size: 1.5rem; 
+            text-shadow : -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;}
+        p:last-child{font-size: 1.5rem; padding-bottom: 2rem; 
+            text-shadow : -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white; color: black;}
+        span{font-size: 60px; padding-top: 20px; display: block;
+            text-shadow : -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;}
     }
 }
 `
@@ -103,7 +107,7 @@ function Different() {
         {
             "title": "생년월",
             "number": "199404",
-            "desc": "hello"
+            "desc": "jeong seojin"
         },
         {
             "title": "프론트엔드",
@@ -126,7 +130,7 @@ function Different() {
             <Container>
                 <ContainerWrap>
                     <ContentTitle>
-                        <Title
+                        <Title 
                             data-aos="fade-up"
                             data-aos-duration="700" >SKILL</Title>
                         {/* <Desc>my skill experience</Desc> */}

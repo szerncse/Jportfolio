@@ -66,7 +66,7 @@ const protdatalist = [
     name: " team-puri",
     days: " 2달",
     good: " 팀프로젝트 ,리뷰 페이지개발, 첫 팀프로젝트",
-    pr: " 100%",
+    pr: " 35%",
     skill: " HTML,tailwindcss,JS,React",
     img: "./images/6page.png"
   },
@@ -92,7 +92,8 @@ function Projectsfile() {
   
 
 <Swipers>
-  <p className='text-6xl md:text-7xl lg:text-8xl text-center mb-10 'data-aos="fade-up"
+  <p className='text-6xl md:text-7xl lg:text-8xl text-center mb-10 
+  'data-aos="fade-up"
           data-aos-duration="700"> 
 PROJECTS</p>
 

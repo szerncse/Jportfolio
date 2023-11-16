@@ -138,8 +138,7 @@ function Main() {
   
         <div className=' text-center pt-10 mt-5 md:mt-8 lg:mt-14 '>
           <div className='h-[50px] lg:h-[5px] text-blak-600 bottom-5
-          lg:text-5xl md:text-4xl text-3xl 
-          animate__animated animate__fadeInDown
+          lg:text-5xl md:text-4xl text-3xl animate__animated animate__fadeInDown
           '>웹 프론트엔드 개발자 정서진입니다.</div>
           {/* <p className='absolute  bottom-1 lg:text-[15px] text-[5px]'>본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적책임을 질 수 있습니다. (무단 도용/캡쳐 및 상업적 포함 사용을 금합니다.) </p> */}
         </div>
@@ -147,8 +146,9 @@ function Main() {
   
 
   <div className='w-full'>
-      <div className='text-5xl md:text-6xl lg:text-7xl text-center mb-10 about A 'data-aos="fade-up"
-          data-aos-duration="700">about</div>
+      <div className='text-5xl md:text-6xl lg:text-7xl text-center mb-10 about
+      A 'data-aos="fade-up"
+          data-aos-duration="700">About</div>
       <div className="w-full flex flex-col  md:flex-row mx-auto
         justify-center items-center mt-20 md:mt-20 lg:mt-40 gap-[50px]
          md:w-[700px] md:h-[300px] 
