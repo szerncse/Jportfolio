@@ -4,6 +4,8 @@ import AnimateNumber from 'animated-number-react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 
 const Container = styled.div`
@@ -74,6 +76,10 @@ ul{
 
 function Different() {
 
+    useEffect(() => {
+        AOS.init();
+      })
+      
     const [isview, setIsView] = useState(false);
     useEffect(()=>{
 
@@ -120,7 +126,9 @@ function Different() {
     <Container>
         <ContainerWrap>
             <ContentTitle>
-            <Title>SKILL</Title>
+            <Title 
+            data-aos="fade-up"
+     data-aos-duration="700" >SKILL</Title>
             {/* <Desc>my skill experience</Desc> */}
             </ContentTitle>
                  <ContentGrid>

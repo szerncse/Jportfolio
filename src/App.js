@@ -5,9 +5,10 @@ import Aside from './Components/Aside';
 
 import Nav from './Home/Nav';
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
-
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 
 
@@ -16,6 +17,11 @@ import { useRef, useState } from 'react';
 
 
 function App() {
+
+  useEffect(() => {
+    AOS.init();
+  })
+  
   const ref = useRef(null);
 
   const handleClick = (e) => {

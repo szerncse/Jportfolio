@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
@@ -7,7 +7,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Autoplay, Pagination } from 'swiper/modules'
 import { data } from 'autoprefixer';
-
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 const Swipers = styled.div`
 margin: 0 auto;
@@ -82,13 +83,17 @@ const protdatalist = [
 
 
 function Projectsfile() {
+  useEffect(() => {
+    AOS.init();
+  })
 
   return (
     <>
   
 
 <Swipers>
-  <p className='text-6xl md:text-7xl lg:text-8xl text-center mb-10'> 
+  <p className='text-6xl md:text-7xl lg:text-8xl text-center mb-10 'data-aos="fade-up"
+          data-aos-duration="700"> 
 PROJECTS</p>
 
     <Swiper

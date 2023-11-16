@@ -1,11 +1,14 @@
 import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faArrowUpFromBracket, faComment, faCube, faFileContract, faQuestion } from '@fortawesome/free-solid-svg-icons';
+import { faAddressCard, faArrowUpFromBracket, faComment, faCube, faFileContract, faQuestion } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react'
+import React, { useEffect } from 'react'
 import Projectsfile from './Projectsfile';
 import Different from '../Home/Different';
-import About from './About';
 
+import 'animate.css';
+
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 const iconone = [{
   "icon": faGithub,
@@ -33,7 +36,7 @@ const iconone = [{
 },
 {
   "icon": faComment,
-  "link": "",
+  "link": "https://open.kakao.com/o/skxXBzSf",
   "right": "30rem",
   "top": "19rem",
   "img": './images/o1bg.png',
@@ -48,7 +51,7 @@ const iconone = [{
   "group": 2
 },
 {
-  "icon": faArrowUpFromBracket,
+  "icon": faAddressCard,
   "link": "",
   "right": "23.5rem",
   "top": "31rem",
@@ -60,6 +63,10 @@ const iconone = [{
 
 function Main() {
   
+  useEffect(() => {
+    AOS.init();
+  })
+
     return (
       <>
         <div className="bg-white text-black max-w-full h-auto mx-auto relative  pt-10 
@@ -129,16 +136,19 @@ function Main() {
   
       </div>
   
-        <div className=' text-center pt-10 mt-5 md:mt-8 lg:mt-14'>
-          <div className=' h-[50px] lg:h-[5px] text-blak-600 bottom-5
-          lg:text-5xl md:text-4xl text-3xl '>웹 프론트엔드 개발자 정서진입니다.</div>
+        <div className=' text-center pt-10 mt-5 md:mt-8 lg:mt-14 '>
+          <div className='h-[50px] lg:h-[5px] text-blak-600 bottom-5
+          lg:text-5xl md:text-4xl text-3xl 
+          animate__animated animate__fadeInDown
+          '>웹 프론트엔드 개발자 정서진입니다.</div>
           {/* <p className='absolute  bottom-1 lg:text-[15px] text-[5px]'>본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적책임을 질 수 있습니다. (무단 도용/캡쳐 및 상업적 포함 사용을 금합니다.) </p> */}
         </div>
       </div>
   
 
   <div className='w-full'>
-      <div className='text-5xl md:text-6xl lg:text-7xl text-center mb-10 about A'>about</div>
+      <div className='text-5xl md:text-6xl lg:text-7xl text-center mb-10 about A 'data-aos="fade-up"
+          data-aos-duration="700">about</div>
       <div className="w-full flex flex-col  md:flex-row mx-auto
         justify-center items-center mt-20 md:mt-20 lg:mt-40 gap-[50px]
          md:w-[700px] md:h-[300px] 
@@ -160,11 +170,11 @@ function Main() {
       <div className='flex justify-center gap-12 mb-56' >
 
      <ul className='text-3xl md:text-4xl'><FontAwesomeIcon icon={faGithub} />
-     <a href="https://github.com/szerncse/" target="_blank"> 깃허브</a></ul>
+     <a href="https://github.com/szerncse/" target="_blank" rel="noreferrer"> 깃허브</a></ul>
         <ul className='text-3xl md:text-4xl text-sky-500'>
         <FontAwesomeIcon icon={faCube} /><span className="text-black">노션</span>  </ul>
         <ul className='text-3xl md:text-4xl text-yellow-300'>
-        <FontAwesomeIcon icon={faComment} /><span className="text-black">카카오</span>
+        <FontAwesomeIcon icon={faComment} /><span className="text-black"><a href="https://open.kakao.com/o/skxXBzSf">카카오</a></span>
         </ul>
      
         </div>

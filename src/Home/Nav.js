@@ -1,6 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styled from 'styled-components'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { useRef } from 'react'
 
 const NavContent = styled.div`
 width: 100%;
@@ -55,83 +57,60 @@ ul{
 }
 `
 
-const StyledIcon = styled(FontAwesomeIcon)`
- transition: all 0.5s;
-    font-size: 12px;
-    vertical-align: baseline;
-    transform: rotate(${({$isopen})=> $isopen === "true" ? '180deg' : '0'});
-`
+function Nav({handleClick}) {
 
-const NavSubmenu = styled.ul`
-position: absolute;
-background-color: rgb(30,41,59);
-transition: 0.5s;
-flex-wrap: wrap;
-text-align: center;
-height: ${({$isopen, $height}) => ($isopen === "true" ? $height : "0px")};
-width: 100%;
-overflow: hidden;
-li{
-    flex-basis: 100% !important;
-    padding: 10px 0;
-    a{
-        color: #fff;
-    }
-}
-`
-
-const NavMember = styled.div`
-ul{
-    display: flex;
-    column-gap: 20px;
-    a.active{
-            color: green;
-            font-weight: bold;
-        }
-}
-`
-
-
-
-
-function Nav({handleClick,test}) {
-
-console.log(test)
+    // const DetailMain = () => {
+    // const scrollRef = useRef([]);
+    // }
 
   return (
     <>
+    {/* <DetailNav scrollRef={scrollRef} />
+      <DetailHOME ref={scrollRef} />
+      <DetailABOUT ref={scrollRef} />
+      <DetailSKILL ref={scrollRef} />
+      <DetailPROJECTS ref={scrollRef} />
+      const DetailReview = forwardRef((props, ref) => {
+  return (
+    <section ref={reviewRef => (ref.current[0] = reviewRef)}>
+      ...
+    </section>
+  );
+});
+ */}
+
+
     <NavContent>
         <NavWrap>
-
             <NavList>
-                <ul>
+                <ul >
                     <li  onClick={()=>{
                         handleClick('home')
-                    }} className='cursor-pointer hidden lg:inline'>HOME</li>
+                    }} className='cursor-pointer hidden lg:inline hover:text-sky-400 '>HOME</li>
                         <li onClick={()=>{
                             handleClick('H')
-                        }} className='cursor-pointer md:hidden'>H</li>
+                        }} className='cursor-pointer text-yellow-400 hover:text-red-200 md:hidden'><FontAwesomeIcon icon={faStar} /></li>
 
                     <li  onClick={()=>{
                         handleClick('about')
                     }} className='cursor-pointer hidden lg:inline'>ABOUT</li>
                         <li onClick={()=>{
                             handleClick('A')
-                        }} className='cursor-pointer md:hidden'>A</li>
+                        }} className='cursor-pointer text-yellow-400 hover:text-orange-500 md:hidden'><FontAwesomeIcon icon={faStar} /></li>
                     
                     <li className='cursor-pointer hidden lg:inline' onClick={()=>{
                         handleClick('skill')
                     }}>SKILL</li>
                         <li onClick={()=>{
                             handleClick('S')
-                        }} className='cursor-pointer md:hidden'>S</li>
+                        }} className='cursor-pointer text-yellow-400 hover:text-green-600 md:hidden'><FontAwesomeIcon icon={faStar} /></li>
 
                     <li  onClick={()=>{
                         handleClick('project')
                     }} className='cursor-pointer hidden lg:inline'>PROJECTS</li>
                         <li onClick={()=>{
                             handleClick('P')
-                        }} className='cursor-pointer md:hidden'>P</li>
+                        }} className='cursor-pointer text-yellow-400 hover:text-sky-500 md:hidden'><FontAwesomeIcon icon={faStar} /></li>
                 </ul>
             </NavList>
         </NavWrap>
