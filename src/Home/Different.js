@@ -113,7 +113,7 @@ function Different() {
         {
             "title": "데이터베이스",
             "number": "700",
-            "desc": "node.js,DataBase,MongoDB, Firebase,MySQL"
+            "desc": "node.js,DataBase,MongoDB, Firebase,MySQL,MariaDB"
         },
         {
             "title": "그외 작업&Tools",
