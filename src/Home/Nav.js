@@ -1,8 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styled from 'styled-components'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
-import { useRef } from 'react'
+import { faAddressCard, faDesktop, faDiamond, faMobileScreen, faStar } from '@fortawesome/free-solid-svg-icons'
+
 
 const NavContent = styled.div`
 width: 100%;
@@ -10,7 +10,7 @@ position: sticky;
 top: 0;
 border-bottom: 1px solid rgba 255,255,255,0.3;
 z-index: 40;
-background: ${(props)=> props.theme.colors.BgColor};
+background: ${(props) => props.theme.colors.BgColor};
 `
 
 const NavWrap = styled.div`
@@ -57,70 +57,54 @@ ul{
 }
 `
 
-function Nav({handleClick}) {
-
-    // const DetailMain = () => {
-    // const scrollRef = useRef([]);
-    // }
-
-  return (
-    <>
-    {/* <DetailNav scrollRef={scrollRef} />
-      <DetailHOME ref={scrollRef} />
-      <DetailABOUT ref={scrollRef} />
-      <DetailSKILL ref={scrollRef} />
-      <DetailPROJECTS ref={scrollRef} />
-      const DetailReview = forwardRef((props, ref) => {
-  return (
-    <section ref={reviewRef => (ref.current[0] = reviewRef)}>
-      ...
-    </section>
-  );
-});
- */}
+function Nav({ handleClick }) {
 
 
-    <NavContent>
-        <NavWrap>
-            <NavList>
-                <ul >
-                    <li  onClick={()=>{
-                        handleClick('home')
-                    }} className='cursor-pointer hidden lg:inline hover:text-sky-400 '>HOME</li>
-                        <li onClick={()=>{
-                            handleClick('H')
-                        }} className='cursor-pointer text-yellow-400 hover:text-red-200 md:hidden'><FontAwesomeIcon icon={faStar} /></li>
+    return (
+        <>
 
-                    <li  onClick={()=>{
-                        handleClick('about')
-                    }} className='cursor-pointer hidden lg:inline'>ABOUT</li>
-                        <li onClick={()=>{
-                            handleClick('A')
-                        }} className='cursor-pointer text-yellow-400 hover:text-orange-500 md:hidden'><FontAwesomeIcon icon={faStar} /></li>
-                    
-                    <li className='cursor-pointer hidden lg:inline' onClick={()=>{
-                        handleClick('skill')
-                    }}>SKILL</li>
-                        <li onClick={()=>{
-                            handleClick('S')
-                        }} className='cursor-pointer text-yellow-400 hover:text-green-600 md:hidden'><FontAwesomeIcon icon={faStar} /></li>
 
-                    <li  onClick={()=>{
-                        handleClick('project')
-                    }} className='cursor-pointer hidden lg:inline'>PROJECTS</li>
-                        <li onClick={()=>{
-                            handleClick('P')
-                        }} className='cursor-pointer text-yellow-400 hover:text-sky-500 md:hidden'><FontAwesomeIcon icon={faStar} /></li>
-                </ul>
-            </NavList>
-        </NavWrap>
-    </NavContent>
+            <NavContent>
+                <NavWrap>
+                    <NavList>
+                        <ul >
+                            <li onClick={() => {
+                                handleClick('home')
+                            }} className='cursor-pointer hidden lg:inline hover:text-sky-400 '>HOME</li>
+                            <li onClick={() => {
+                                handleClick('H')
+                            }} className='cursor-pointer text-yellow-400 hover:text-red-200 md:hidden'><FontAwesomeIcon icon={faStar} /></li>
 
-    
-    
-    
-    </>
-  )
+                            <li onClick={() => {
+                                handleClick('about')
+                            }} className='cursor-pointer hidden lg:inline'>ABOUT</li>
+                            <li onClick={() => {
+                                handleClick('A')
+                            }} className='cursor-pointer text-yellow-400 hover:text-orange-500 md:hidden'><FontAwesomeIcon icon={faAddressCard} /></li>
+
+                            <li className='cursor-pointer hidden lg:inline' onClick={() => {
+                                handleClick('skill')
+                            }}>SKILL</li>
+                            <li onClick={() => {
+                                handleClick('S')
+                            }} className='cursor-pointer text-yellow-400 hover:text-green-600 md:hidden'><FontAwesomeIcon icon={faDiamond} /></li>
+
+                            <li onClick={() => {
+                                handleClick('project')
+                            }} className='cursor-pointer hidden lg:inline'>PROJECTS</li>
+                            <li onClick={() => {
+                                handleClick('P')
+                            }} className='cursor-pointer text-yellow-400 hover:text-sky-500 md:hidden'><FontAwesomeIcon icon={faMobileScreen} /></li>
+                        </ul>
+                    </NavList>
+                </NavWrap>
+            </NavContent>
+
+
+
+
+        </>
+    )
 }
 
 export default Nav

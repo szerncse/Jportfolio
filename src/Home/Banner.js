@@ -1,6 +1,6 @@
 import React from 'react'
-import {Swiper, SwiperSlide} from 'swiper/react'
-import {Autoplay, Navigation, Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -108,55 +108,55 @@ p{
 
 function Banner() {
 
-useEffect(()=>{
-  new WOW.WOW({
-    boxClass: "wow",
-    animateClass: "animate__animated",
-    live: false,
-    mobile:true
-  }).init();
-},[])
-  
+  useEffect(() => {
+    new WOW.WOW({
+      boxClass: "wow",
+      animateClass: "animate__animated",
+      live: false,
+      mobile: true
+    }).init();
+  }, [])
+
   return (
     <>
       <Swiper
         autoplay={{
-          delay : 3000,
+          delay: 3000,
           disableOnInteraction: false
         }}
-        loop = {true}
+        loop={true}
         // 몇개씩 보이게 할건지
         slidesPerView={1}
-        navigation= {{clickable: true}}
-        pagination= {{clickable: true}}
+        navigation={{ clickable: true }}
+        pagination={{ clickable: true }}
         modules={[Autoplay, Navigation, Pagination]}
 
         // onSwiper={()=>{ console.log(Swiper)}}
         onSlideChange={
-          ()=>{
+          () => {
             new WOW.WOW({
               live: false
             }).init()
           }}
-        >
+      >
 
         {
-          TxtData.map((e,i)=>{
+          TxtData.map((e, i) => {
             return (
               <StyleSlide key={i}>
-                <img src={`./images/${i+1}.png`} alt="slide" />
+                <img src={`./images/${i + 1}.png`} alt="slide" />
                 <DescContent>
-                <h3 className= 'wow animate__wobble'
-                 data-wow-duration="1s">{e.title}</h3>
-                 <p className='wow animate__wobble' data-wow-duration="1s" data-wow-delay="0.3s">{e.desc}</p>
-                 <p className='wow animate__wobble' data-wow-duration="1s"data-wow-delay="0.6s">{e.desc2}</p>
+                  <h3 className='wow animate__wobble'
+                    data-wow-duration="1s">{e.title}</h3>
+                  <p className='wow animate__wobble' data-wow-duration="1s" data-wow-delay="0.3s">{e.desc}</p>
+                  <p className='wow animate__wobble' data-wow-duration="1s" data-wow-delay="0.6s">{e.desc2}</p>
                 </DescContent>
               </StyleSlide>
             )
           })
         }
       </Swiper>
-      
+
     </>
   )
 }
