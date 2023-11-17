@@ -105,8 +105,8 @@ function Different() {
 
     const data = [
         {
-            "title": "생년월",
-            "number": "199404",
+            "title": "생년월일",
+            "number": "19940429",
             "desc": "jeong seojin"
         },
         {

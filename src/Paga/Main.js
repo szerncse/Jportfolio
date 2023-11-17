@@ -174,9 +174,9 @@ function Main() {
      <ul className='text-3xl md:text-4xl'><FontAwesomeIcon icon={faGithub} />
      <a href="https://github.com/szerncse/" target="_blank" rel="noreferrer"> 깃허브</a></ul>
         <ul className='text-3xl md:text-4xl text-sky-500'>
-        <FontAwesomeIcon icon={faCube} /><span className="text-black">노션</span>  </ul>
+        <FontAwesomeIcon icon={faCube} /><span className="text-black"> 노션</span>  </ul>
         <ul className='text-3xl md:text-4xl text-yellow-300'>
-        <FontAwesomeIcon icon={faComment} /><span className="text-black"><a href="https://open.kakao.com/o/skxXBzSf">카카오</a></span>
+        <FontAwesomeIcon icon={faComment} /><span className="text-black"><a href="https://open.kakao.com/o/skxXBzSf"> 카카오</a></span>
         </ul>
      
         </div>
