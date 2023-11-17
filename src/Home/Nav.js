@@ -11,6 +11,7 @@ top: 0;
 border-bottom: 1px solid rgba 255,255,255,0.3;
 z-index: 40;
 background: ${(props) => props.theme.colors.BgColor};
+color: ${(props) => props.theme.colors.Color};
 `
 
 const NavWrap = styled.div`

@@ -55,7 +55,7 @@ function App() {
       Primary : "#272929",
       Secondary : "#e9e9e9",
       BgColor: "#333",
-      Color : "#e9e9e9",
+      Color : "#fff",
       ContentBg: "#272929",
       img1: "./images/jsj"
     }
