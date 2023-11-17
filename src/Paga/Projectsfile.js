@@ -93,6 +93,8 @@ function Projectsfile() {
 
 <Swipers>
   <p className='text-6xl md:text-7xl lg:text-8xl text-center mb-10 
+ drop-shadow-[1px_0_2px_black]
+ text-white
   'data-aos="fade-up"
           data-aos-duration="700"> 
 PROJECTS</p>

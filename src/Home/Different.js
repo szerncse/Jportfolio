@@ -68,7 +68,7 @@ ul{
         @media screen and (min-width: 1024px){
             flex-basis: 25%;
         }
-        p:first-child{font-size: 1.5rem; 
+        p:first-child{font-size: 2rem; 
             text-shadow : -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;}
         p:last-child{font-size: 1.5rem; padding-bottom: 2rem; 
             text-shadow : -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white; color: black;}
