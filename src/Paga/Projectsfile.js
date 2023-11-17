@@ -79,6 +79,69 @@ const protdatalist = [
     skill: " HTML,tailwindcss,JS,React",
     img: "./images/7page.png"
   },
+  {
+    link: "https://hmg-szerncse.vercel.app/",
+    name: "HMG클론코딩",
+    days: " 1달",
+    good: "클론코딩 제작 ,사용자 메인 페이지개발, 기타 드라이빙 사이트를 처음으로 제작",
+    pr: "100%",
+    skill: "HTML,CSS,JS",
+    img: "./images/1page.png"
+  },
+  {
+    link: "https://subway-phi.vercel.app/",
+    name: "subway클론코딩",
+    days: "1달",
+    good: "클론코딩 제작 ,사용자 메인 페이지개발, subway사이트를 두번째로 제작",
+    pr: "100%",
+    skill: "HTML,CSS,JS",
+    img: "./images/2page.png"
+  },
+  {
+    link: "https://react-quiz-ochre.vercel.app/",
+    name: "quiz",
+    days: "1달",
+    good: "100%",
+    pr: "100%",
+    skill: "HTML,CSS,JS,React,tailwindcss",
+    img: "./images/3page.png"
+  },
+  {
+    link: "https://react-festival-nine.vercel.app/",
+    name: "festival",
+    days: "1달",
+    good: "100%",
+    pr: "100%",
+    skill: "HTML,tailwindcss,JS,React",
+    img: "./images/4page.png"
+  },
+  {
+    link: " https://jportfolio-mu.vercel.app/",
+    name: " jportfolio",
+    days: " 1달",
+    good: " 100%",
+    pr: " 100%",
+    skill: "HTML,tailwindcss,JS,React",
+    img: "./images/5page.png"
+  },
+  {
+    link: " https://team-puri.vercel.app/",
+    name: " team-puri",
+    days: " 2달",
+    good: " 팀프로젝트 ,리뷰 페이지개발, 첫 팀프로젝트",
+    pr: " 35%",
+    skill: " HTML,tailwindcss,JS,React",
+    img: "./images/6page.png"
+  },
+  {
+    link: " https://luckyday-five.vercel.app/",
+    name: " luckyday",
+    days: " 1달",
+    good: " 럭키",
+    pr: " 100%",
+    skill: " HTML,tailwindcss,JS,React",
+    img: "./images/7page.png"
+  },
 ]
 
 
@@ -108,7 +171,7 @@ PROJECTS</p>
     autoplay={{
       delay: 2000,
     }}
-    loop={false}
+    loop={true}
 
 
     pagination={{
