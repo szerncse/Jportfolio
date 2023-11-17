@@ -71,7 +71,7 @@ function Main() {
 
   return (
     <>
-      <div className="bg-white text-black max-w-full h-auto mx-auto relative  pt-10 
+      <div className="bg-white text-black max-w-full h-auto mx-auto relative  pt-10 dark:bg-[#272929]
         pb-16 md:pb-40 lg:pb-52 home H
        "style={{
           backgroundImage: `url('images/.png')`
@@ -166,7 +166,7 @@ function Main() {
 
           <div className=" basis-full md:text-basis-60 lg:basis-96  
         p-5 md:p-0  text-center text-xl md:text-2xl lg:text-2xl
-        ">네이버 블로그를 제가 원하는 대로 예쁘게 만드려고 시작하다가 HTML, CSS에 관심으로 시작해서 코드를 이용한다면 기능을 직접 구현할 수 있다는 것을 알게 되어 IT 서비스를 직접 제작하는 전문가가 되고자 도전하게 되었습니다.
+        ">TISTORY 블로그를 제가 원하는 대로 예쁘게 만드려고 시작하다가 HTML, CSS에 관심으로 시작해서 코드를 이용한다면 기능을 직접 구현할 수 있다는 것을 알게 되어 IT 서비스를 직접 제작하는 전문가가 되고자 도전하게 되었습니다.
           </div>
         </div>
       </div>
