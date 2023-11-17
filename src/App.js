@@ -64,7 +64,13 @@ function App() {
   const [themeConfig, setThemeConfig] = useState("light");
   const DarkMode = themeConfig === 'light' ? light : dark;
   const ThemeSelect = ()=>{
-    setThemeConfig(themeConfig === 'light' ? 'dark' : 'light')
+    setThemeConfig(themeConfig === 'light' ? 'dark' : 'light') 
+    if (themeConfig === 'dark' ){
+      document.querySelector("html").classList.remove("dark");
+      
+    }else{
+      document.querySelector("html").classList.add("dark")
+    }
   }
 
 
@@ -73,7 +79,7 @@ function App() {
     <>
       <ThemeProvider theme={DarkMode}>
         <Nav handleClick={handleClick} />
-        <Main />
+        <Main ThemeSelect={ThemeSelect} themeConfig={themeConfig}/>
         <Aside ThemeSelect={ThemeSelect} themeConfig={themeConfig}/>
       </ThemeProvider>
     </>

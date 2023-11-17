@@ -71,7 +71,7 @@ function Main() {
 
   return (
     <>
-      <div className="bg-white text-black max-w-full h-auto mx-auto relative  pt-10 dark:bg-[#272929]
+      <div className=" text-black max-w-full h-auto mx-auto relative  pt-10 dark:bg-[#272929]
         pb-16 md:pb-40 lg:pb-52 home H
        "style={{
           backgroundImage: `url('images/.png')`
