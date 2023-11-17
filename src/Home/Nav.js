@@ -77,12 +77,12 @@ function Nav({ handleClick }) {
 
                             <li onClick={() => {
                                 handleClick('about')
-                            }} className='cursor-pointer hidden lg:inline'>ABOUT</li>
+                            }} className='cursor-pointer hidden lg:inline hover:text-sky-400'>ABOUT</li>
                             <li onClick={() => {
                                 handleClick('A')
                             }} className='cursor-pointer text-yellow-400 hover:text-orange-500 md:hidden'><FontAwesomeIcon icon={faAddressCard} /></li>
 
-                            <li className='cursor-pointer hidden lg:inline' onClick={() => {
+                            <li className='cursor-pointer hidden lg:inline hover:text-sky-400' onClick={() => {
                                 handleClick('skill')
                             }}>SKILL</li>
                             <li onClick={() => {
@@ -91,7 +91,7 @@ function Nav({ handleClick }) {
 
                             <li onClick={() => {
                                 handleClick('project')
-                            }} className='cursor-pointer hidden lg:inline'>PROJECTS</li>
+                            }} className='cursor-pointer hidden lg:inline hover:text-sky-400'>PROJECTS</li>
                             <li onClick={() => {
                                 handleClick('P')
                             }} className='cursor-pointer text-yellow-400 hover:text-sky-500 md:hidden'><FontAwesomeIcon icon={faMobileScreen} /></li>
