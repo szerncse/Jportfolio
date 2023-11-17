@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styled from 'styled-components'
 import { faAddressCard, faDesktop, faDiamond, faMobileScreen, faStar } from '@fortawesome/free-solid-svg-icons'
+
 
 
 const NavContent = styled.div`
@@ -19,6 +20,7 @@ max-width: 1280px;
 margin: 0 auto; display: flex; justify-content: space-between;
 align-items: center; padding: 23px 2%; 
 justify-content: flex-end;
+
 
 @media screen and (max-width: 737px){
    
@@ -60,6 +62,9 @@ ul{
 
 function Nav({ handleClick }) {
 
+    const [isview, setIsView] = useState(0);
+
+
 
     return (
         <>
@@ -68,34 +73,38 @@ function Nav({ handleClick }) {
             <NavContent>
                 <NavWrap>
                     <NavList>
-                        <ul >
+                        <ul>
+                            <li onClick={() => { handleClick('home'); setIsView(0)}}
+                                className={`cursor-pointer hidden lg:inline
+                             ${isview === 0 && 'text-sky-500'}`}>HOME</li>
                             <li onClick={() => {
-                                handleClick('home')
-                            }} className='cursor-pointer hidden lg:inline hover:text-sky-400 '>HOME</li>
-                            <li onClick={() => {
-                                handleClick('H')
-                            }} className='cursor-pointer text-yellow-400 hover:text-red-200 md:hidden'><FontAwesomeIcon icon={faStar} /></li>
+                                handleClick('H'); }} 
+                            className={`cursor-pointer  hover:text-sky-500 md:hidden `}>
+                                <FontAwesomeIcon icon={faStar} onClick={() => {setIsView(4)}} className={` ${isview === 4 && 'text-sky-500'}`} /></li>
 
                             <li onClick={() => {
-                                handleClick('about')
-                            }} className='cursor-pointer hidden lg:inline hover:text-sky-400'>ABOUT</li>
+                                handleClick('about');setIsView(1)
+                            }} className={`cursor-pointer hidden lg:inline
+                            ${isview === 1 && 'text-sky-500'}`}>ABOUT</li>
                             <li onClick={() => {
                                 handleClick('A')
-                            }} className='cursor-pointer text-yellow-400 hover:text-orange-500 md:hidden'><FontAwesomeIcon icon={faAddressCard} /></li>
+                            }} className='cursor-pointer hover:text-sky-500 md:hidden'><FontAwesomeIcon icon={faAddressCard} onClick={() => {setIsView(5)}} className={` ${isview === 5 && 'text-sky-500'}`} /></li>
 
-                            <li className='cursor-pointer hidden lg:inline hover:text-sky-400' onClick={() => {
-                                handleClick('skill')
+                            <li className={`cursor-pointer hidden lg:inline
+                            ${isview === 2 && 'text-sky-500'}`} onClick={() => {
+                                handleClick('skill'); setIsView(2)
                             }}>SKILL</li>
                             <li onClick={() => {
                                 handleClick('S')
-                            }} className='cursor-pointer text-yellow-400 hover:text-green-600 md:hidden'><FontAwesomeIcon icon={faDiamond} /></li>
+                            }} className='cursor-pointer hover:text-sky-600 md:hidden'><FontAwesomeIcon icon={faDiamond} onClick={() => {setIsView(6)}} className={` ${isview === 6 && 'text-sky-500'}`}/></li>
 
                             <li onClick={() => {
-                                handleClick('project')
-                            }} className='cursor-pointer hidden lg:inline hover:text-sky-400'>PROJECTS</li>
+                                handleClick('project');setIsView(3)
+                            }} className={`cursor-pointer hidden lg:inline
+                            ${isview === 3 && 'text-sky-500'}`}>PROJECTS</li>
                             <li onClick={() => {
                                 handleClick('P')
-                            }} className='cursor-pointer text-yellow-400 hover:text-sky-500 md:hidden'><FontAwesomeIcon icon={faMobileScreen} /></li>
+                            }} className='cursor-pointer hover:text-sky-500 md:hidden'><FontAwesomeIcon icon={faMobileScreen} onClick={() => {setIsView(7)}} className={` ${isview === 7 && 'text-sky-500'}`} /></li>
                         </ul>
                     </NavList>
                 </NavWrap>

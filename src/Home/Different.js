@@ -85,6 +85,7 @@ function Different() {
     })
 
     const [isview, setIsView] = useState(false);
+    
     useEffect(() => {
 
         const scrollEvent = () => {

@@ -10,8 +10,8 @@ function About() {
   return (
     <>
     {/* <Navs /> */}
-    {/* <div className=''></div>
-   <img src="./images/xxl.png" alt="xxl.png" /> */}
+    <div className=''></div>
+   <img src="./images/xxl.png" alt="xxl.png" />
 
 
 

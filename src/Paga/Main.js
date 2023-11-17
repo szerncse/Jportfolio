@@ -176,7 +176,7 @@ function Main() {
 
         <ul className='text-3xl md:text-4xl flex gap-10'>
           <li className='relative after:absolute after:w-full after:h-1 after:bg-gray-300 after:bottom-0 after:left-0 after:scale-0 after:duration-500 hover:after:scale-100 '>
-          <FontAwesomeIcon icon={faGithub} />
+            <FontAwesomeIcon icon={faGithub} />
             <a href="https://github.com/szerncse/" target="_blank" rel="noreferrer"> 깃허브</a>
           </li>
 
