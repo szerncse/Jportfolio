@@ -106,9 +106,9 @@ PROJECTS</p>
     modules={[Autoplay]}
     // autoplay={true}
     autoplay={{
-      delay: 1200,
+      delay: 2000,
     }}
-    loop={true}
+    loop={false}
 
 
     pagination={{
