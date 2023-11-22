@@ -150,80 +150,130 @@ function Projectsfile() {
     AOS.init();
   })
 
+  const totalProjects = protdatalist.length / 2;
+
   return (
     <>
-  
 
-<Swipers>
-  <p className='text-6xl md:text-7xl lg:text-8xl text-center mb-10 
+
+      <Swipers>
+        <ul className='text-6xl md:text-7xl lg:text-8xl text-center mb-10 
  drop-shadow-[1px_0_2px_black]
  text-white
-  'data-aos="fade-up"
-          data-aos-duration="700"> 
-PROJECTS</p>
+  'data-aos="fade-up" data-aos-duration="700">
+          PROJECTS
+        </ul>
+        
 
-    <Swiper
-    slidesPerView={1}
-    spaceBetween={10}
+        <div className='flex flex-col items-center justify-center mb-20'>
+        <div className='flex gap-14'>
+        <ul className=''>
+          <li className='text-lg text-white bg-red-300 w-14 text-center border rounded-3xl drop-shadow-[1px_0_2px_black]'>NEW</li>
+        </ul>
+        {
+          protdatalist.slice(-1).map((e, i) => (
 
-    modules={[Autoplay]}
-    // autoplay={true}
-    autoplay={{
-      delay: 2000,
-    }}
-    loop={true}
+            <div className='relative overflow-hidden group 
+             drop-shadow-[20px_20px_13px_gray]
+             text-lg bg-white w-80 h-80 text-center border rounded-full' key={i} style={{ backgroundImage: `url(${e.img})`, backgroundSize: "cover", backgroundPosition: "center" }}>
+              <div className=" absolute w-full h-full bg-black/50 duration-500 
+            left-0 top-[100%] group-hover:top-5 z-20 border rounded-full text-white pt-8">
+                <ul>
+                  <li>프로젝트이름: {e.name}</li>
+                  <li>제작기간: {e.days}</li>
+                  <li>기여도: {e.pr}</li>
+                  <li>관련스킬: {e.skill}</li>
+                  <li>담당업무: {e.good}</li>
+                </ul>
+              </div>
+            </div>
+          ))
+        }
+        {
+          protdatalist.slice(-1).map((e, i) => (
+
+            <div className='relative overflow-hidden group
+             text-lg bg-white w-80 h-80 border rounded-3xl p-5' key={i}>
+              <div>
+                <ul>
+                  <li>프로젝트이름: {e.name}</li>
+                  <li>제작기간: {e.days}</li>
+                  <li>기여도: {e.pr}</li>
+                  <li>관련스킬: {e.skill}</li>
+                  <li>담당업무: {e.good}</li>
+                </ul>
+              </div>
+            </div>
+          ))
+        }
+        </div>
+        </div>
+
+        <p className='text-lg bg-sky-200 w-20 text-center border rounded-md'>total  {totalProjects} 개</p>
 
 
-    pagination={{
-      clickable: true,
-    }}
-    breakpoints={{
-      '@0.00': {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      '@0.75': {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      '@1.00': {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },
-      '@1.50': {
-        slidesPerView: 4,
-        spaceBetween: 50,
-      },
-    }}>
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={10}
 
-     
+          modules={[Autoplay]}
+          // autoplay={true}
+          autoplay={{
+            delay: 2000,
+          }}
+          loop={true}
 
- 
-      {
-        protdatalist.map((e,i)=>{
-            return(
-              <SwiperSlide className='relative group'  key={i}>
-              <a href={e.link} target="_blank" rel="noreferrer">
-                <div style={{backgroundImage: `url(${e.img})`, backgroundSize: "cover", backgroundPosition: "center"}} className='  h-[550px] border'></div></a>
-                <div className="absolute w-full h-full bg-black/50 duration-500 
+
+          pagination={{
+            clickable: true,
+          }}
+          breakpoints={{
+            '@0.00': {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            '@0.75': {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            '@1.00': {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            '@1.50': {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          }}>
+
+
+
+
+          {
+            protdatalist.map((e, i) => {
+              return (
+                <SwiperSlide className='relative group' key={i}>
+                  <a href={e.link} target="_blank" rel="noreferrer">
+                    <div style={{ backgroundImage: `url(${e.img})`, backgroundSize: "cover", backgroundPosition: "center" }} className='h-[550px] border'></div></a>
+                  <div className="absolute w-full h-full bg-black/50 duration-500 
                  left-0 top-[100%] group-hover:top-40 z-20">
-                  <ul className='text-xl text-cyan-50 text-left my-10 p-5 overflow-wrap break-all'>
-                    <li>프로젝트이름:{e.name}</li>
-                    <li>제작기간:{e.days}</li>
-                    <li>기여도:{e.pr}</li>
-                    <li>관련스킬:{e.skill}</li>
-                    <li>담당업무:{e.good}</li>
+                    <ul className='text-xl text-cyan-50 text-left my-10 p-5 overflow-wrap break-all'>
+                      <li>프로젝트이름:{e.name}</li>
+                      <li>제작기간:{e.days}</li>
+                      <li>기여도:{e.pr}</li>
+                      <li>관련스킬:{e.skill}</li>
+                      <li>담당업무:{e.good}</li>
                     </ul>
-                </div>
+                  </div>
                 </SwiperSlide>
-            )
-        })
-      }
+              )
+            })
+          }
 
-  
-  </Swiper>
 
-</Swipers>
+        </Swiper>
+
+      </Swipers>
 
 
 
