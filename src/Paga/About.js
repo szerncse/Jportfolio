@@ -9,13 +9,13 @@ import { faCube } from '@fortawesome/free-solid-svg-icons'
 function About() {
   return (
     <>
-    {/* <Navs /> */}
-    <div className=''></div>
-   <img src="./images/xxl.png" alt="xxl.png" />
+      {/* <Navs /> */}
+      <div className=''></div>
+      <img src="./images/xxl.png" alt="xxl.png" />
 
 
 
-       {/* <div className='w-full mb-20'> */}
+      {/* <div className='w-full mb-20'> */}
       {/* <div className='text-5xl md:text-6xl lg:text-7xl text-center mb-10'>ARCHIVING</div> */}
       {/* <div className='flex justify-center gap-12' >
         <div className='border rounded-xl w-80 h-56 p-5 '>
@@ -39,7 +39,7 @@ function About() {
           </div>
         </div>      
       </div> */}
-    
+
     </>
   )
 }

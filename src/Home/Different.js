@@ -85,7 +85,7 @@ function Different() {
     })
 
     const [isview, setIsView] = useState(false);
-    
+
     useEffect(() => {
 
         const scrollEvent = () => {
@@ -131,7 +131,7 @@ function Different() {
             <Container>
                 <ContainerWrap>
                     <ContentTitle>
-                        <Title 
+                        <Title
                             data-aos="fade-up"
                             data-aos-duration="700" >SKILL</Title>
                         {/* <Desc>my skill experience</Desc> */}

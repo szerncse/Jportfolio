@@ -14,7 +14,7 @@ border-bottom: 1px solid rgba 255,255,255,0.3;
 background: #fff;
 z-index: 40;
 box-shadow: 3px 3px 3px 3px gray;
-background: ${(props)=> props.theme.colors.BgColor};
+background: ${(props) => props.theme.colors.BgColor};
 `
 
 const NavWrap = styled.div`
@@ -73,7 +73,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
  transition: all 0.5s;
     font-size: 12px;
     vertical-align: baseline;
-    transform: rotate(${({$isopen})=> $isopen === "true" ? '180deg' : '0'});
+    transform: rotate(${({ $isopen }) => $isopen === "true" ? '180deg' : '0'});
 `
 
 const NavSubmenu = styled.ul`
@@ -82,7 +82,7 @@ background-color: rgb(30,41,59);
 transition: 0.5s;
 flex-wrap: wrap;
 text-align: center;
-height: ${({$isopen, $height}) => ($isopen === "true" ? $height : "0px")};
+height: ${({ $isopen, $height }) => ($isopen === "true" ? $height : "0px")};
 width: 100%;
 overflow: hidden;
 li{
@@ -112,37 +112,37 @@ function Navs() {
 
 
 
-  return (
-    <>
-    <NavContent>
-        <NavWrap>
-            <NavLogo>
-                <NavLink to="/">
-                    <img src="./images/jsj2.png" alt="로고" />
-                    {/* {(props) => props.theme.imgss.img1} */}
-                    {/* <img className='w-7 h-6'
+    return (
+        <>
+            <NavContent>
+                <NavWrap>
+                    <NavLogo>
+                        <NavLink to="/">
+                            <img src="./images/jsj2.png" alt="로고" />
+                            {/* {(props) => props.theme.imgss.img1} */}
+                            {/* <img className='w-7 h-6'
                               src={theme === 'light' ?
                               "./images/jsj2.png" : "./images/jsj2.png"}
                               alt="camera" /> */}
-                    {/* <img src="./images/logos.png" alt="로고" /> */}
-                </NavLink>
-            </NavLogo>
-            <NavList>
-                <ul>
-                    <li><NavLink to="/">HOME</NavLink></li>
-                    <li><NavLink to="/About">ABOUT</NavLink></li>
-                    <li><a href="https://github.com/szerncse">Git</a></li>
-                    <li><NavLink to="/Projects">PROJECTS</NavLink></li>
-                </ul>
-            </NavList>
-        </NavWrap>
-    </NavContent>
+                            {/* <img src="./images/logos.png" alt="로고" /> */}
+                        </NavLink>
+                    </NavLogo>
+                    <NavList>
+                        <ul>
+                            <li><NavLink to="/">HOME</NavLink></li>
+                            <li><NavLink to="/About">ABOUT</NavLink></li>
+                            <li><a href="https://github.com/szerncse">Git</a></li>
+                            <li><NavLink to="/Projects">PROJECTS</NavLink></li>
+                        </ul>
+                    </NavList>
+                </NavWrap>
+            </NavContent>
 
-    
-    
-    
-    </>
-  )
+
+
+
+        </>
+    )
 }
 
 export default Navs
