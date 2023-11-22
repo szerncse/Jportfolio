@@ -170,12 +170,13 @@ function Projectsfile() {
         <ul className=''>
           <li className='absolute text-lg ml-8 text-white bg-red-300 w-14 text-center border rounded-3xl drop-shadow-[1px_0_2px_black]'>NEW</li>
         </ul>
+       
         {
           protdatalist.slice(-1).map((e, i) => (
-
+            <a href={e.link} target="_blank" rel="noopener noreferrer" key={i}>
             <div className='relative overflow-hidden group 
              drop-shadow-[20px_20px_13px_gray]
-             text-lg bg-white w-80 h-80 text-center border rounded-full' key={i} style={{ backgroundImage: `url(${e.img})`, backgroundSize: "cover", backgroundPosition: "center" }}>
+             text-lg bg-white w-80 h-80 text-center border rounded-full cursor-pointer' key={i} style={{ backgroundImage: `url(${e.img})`, backgroundSize: "cover", backgroundPosition: "center" }} >
               <div className=" absolute w-full h-full bg-black/50 duration-500 
             left-0 top-[100%] group-hover:top-5 z-20 border rounded-full text-white pt-8">
                 <ul>
@@ -187,6 +188,7 @@ function Projectsfile() {
                 </ul>
               </div>
             </div>
+            </a>
           ))
         }
         {
