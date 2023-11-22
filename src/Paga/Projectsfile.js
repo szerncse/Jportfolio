@@ -204,7 +204,7 @@ PROJECTS</p>
             return(
               <SwiperSlide className='relative group'  key={i}>
               <a href={e.link} target="_blank" rel="noreferrer">
-                <div style={{backgroundImage: `url(${e.img})`, backgroundSize: "cover", backgroundPosition: "center"}} className='  h-[600px] border'></div></a>
+                <div style={{backgroundImage: `url(${e.img})`, backgroundSize: "cover", backgroundPosition: "center"}} className='  h-[550px] border'></div></a>
                 <div className="absolute w-full h-full bg-black/50 duration-500 
                  left-0 top-[100%] group-hover:top-40 z-20">
                   <ul className='text-xl text-cyan-50 text-left my-10 p-5 overflow-wrap break-all'>
