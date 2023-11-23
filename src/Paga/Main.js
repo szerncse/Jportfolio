@@ -166,10 +166,14 @@ function Main({themeConfig }) {
          md:w-[700px] md:h-[300px] 
         lg:w-[900px] lg:h-[350px] pb-20 ">
 
-          <img className='basis-full w-[300px] border
+          {/* <img className='basis-full w-[300px] border
         md:basis-90 md:w-[350px] 
         lg:basis-auto lg:w-[450px] 
-        bg-cover ' src="./images/mys.jpg" alt="이미지" />
+        bg-cover ' src="./images/mys.jpg" alt="이미지" /> */}
+        <img className='basis-full w-[300px] border
+        md:basis-90 md:w-[350px] 
+        lg:basis-auto lg:w-[450px] 
+        bg-cover ' src={themeConfig === 'light' ? "./images/mysj.jpg" : "./images/mys.jpg"} alt="바다" />
 
           <div className=" basis-full md:text-basis-60 lg:basis-96  
         p-5 md:p-0  text-center text-xl md:text-2xl lg:text-2xl
