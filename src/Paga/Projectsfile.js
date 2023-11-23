@@ -196,7 +196,7 @@ function Projectsfile() {
           protdatalist.slice(-1).map((e, i) => (
 
             <div className='relative overflow-hidden group hidden sm:block
-             text-lg bg-gray-100 dark:bg-white dark:text-black w-80 h-80 border rounded-3xl p-5' key={i}>
+             text-lg bg-gray-100 dark:bg-sky-100 dark:text-black w-80 h-80 border rounded-3xl p-5' key={i}>
               <div>
                 <ul>
                   <li>프로젝트이름: {e.name}</li>
