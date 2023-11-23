@@ -66,7 +66,7 @@ const protdatalist = [
     name: " team-puri",
     days: " 2달",
     good: " 팀프로젝트 ,리뷰 페이지개발, 첫 팀프로젝트",
-    pr: " 35%",
+    pr: " 35% ( 5명 )",
     skill: " HTML,tailwindcss,JS,React",
     img: "./images/6page.png"
   },
