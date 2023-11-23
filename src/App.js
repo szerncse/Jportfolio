@@ -81,14 +81,14 @@ function App() {
     <>
       <ThemeProvider theme={DarkMode}>
         <Nav handleClick={handleClick} />
-        {/* <Main ThemeSelect={ThemeSelect} themeConfig={themeConfig}/> */}
         <Aside ThemeSelect={ThemeSelect} themeConfig={themeConfig}/>
-      </ThemeProvider>
-      
+        {/* <Main ThemeSelect={ThemeSelect} themeConfig={themeConfig}/> */}
       <Routes>
       <Route path="/" element={<Main/>}></Route>
       <Route path="/*" element={<Notpage/>}></Route>
       </Routes>
+      </ThemeProvider>
+      
     </>
   );
 }

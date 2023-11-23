@@ -83,6 +83,9 @@ function Main() {
      lg:basis-[32.5%] lg:w-[400px] lg:h-[400px] md:w-[350px] md:h-[350px] w-[300px] h-[300px]
      flex justify-center items-center bg-[#CAECFF] hover:bg-[#85D3FF] shadow-lg">
             <img className='rounded-full' src="/images/5.png" alt="바다" />
+            {/* <img className='rounded-full'
+            src={theme === 'light' ? "/images/5.png" : "/images/7png"} alt="blue"/> */}
+
             <img className="mt-2.5 rounded-full
        lg:w-[410px] lg:h-[410px]  md:w-[350px] md:h-[350px] w-[300px] h-[300px]
        mb-1 object-cover absolute  opacity-10"
@@ -172,7 +175,7 @@ function Main() {
       </div>
 
       {/* <About /> */}
-      <div className='flex justify-center gap-12 pb-56 dark:bg-[#555959] ' >
+      <div className='flex justify-center gap-12 pb-32 pt-16 dark:bg-[#555959] ' >
 
         <ul className='text-3xl md:text-4xl flex gap-10 '>
           <li className='relative after:absolute after:w-full after:h-1 after:bg-gray-300 after:bottom-0 after:left-0 after:scale-0 after:duration-500 hover:after:scale-100'>
