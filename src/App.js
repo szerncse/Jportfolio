@@ -84,7 +84,8 @@ function App() {
         <Aside ThemeSelect={ThemeSelect} themeConfig={themeConfig}/>
         {/* <Main ThemeSelect={ThemeSelect} themeConfig={themeConfig}/> */}
       <Routes>
-      <Route path="/" element={<Main/>}></Route>
+      {/* <Route path="/" element={<Main/>}></Route> */}
+      <Route path="/" element={<Main themeConfig={themeConfig} />}></Route>
       <Route path="/*" element={<Notpage/>}></Route>
       </Routes>
       </ThemeProvider>
