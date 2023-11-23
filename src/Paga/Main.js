@@ -149,15 +149,15 @@ function Main() {
       </div>
 
 
-      <div className='w-full'>
+      <div className='w-full dark:bg-[#555959] dark:text-[#fff]'>
         <div className='text-5xl md:text-6xl lg:text-7xl text-center mb-10 about  drop-shadow-[1px_0_2px_black]
- text-white
+ text-white 
       A 'data-aos="fade-up"
           data-aos-duration="700">About</div>
         <div className="w-full flex flex-col  md:flex-row mx-auto
         justify-center items-center mt-20 md:mt-20 lg:mt-40 gap-[50px]
          md:w-[700px] md:h-[300px] 
-        lg:w-[900px] lg:h-[350px] mb-20 ">
+        lg:w-[900px] lg:h-[350px] pb-20 ">
 
           <img className='basis-full w-[300px] border
         md:basis-90 md:w-[350px] 
@@ -172,30 +172,30 @@ function Main() {
       </div>
 
       {/* <About /> */}
-      <div className='flex justify-center gap-12 mb-56' >
+      <div className='flex justify-center gap-12 pb-56 dark:bg-[#555959] ' >
 
-        <ul className='text-3xl md:text-4xl flex gap-10'>
-          <li className='relative after:absolute after:w-full after:h-1 after:bg-gray-300 after:bottom-0 after:left-0 after:scale-0 after:duration-500 hover:after:scale-100 '>
+        <ul className='text-3xl md:text-4xl flex gap-10 '>
+          <li className='relative after:absolute after:w-full after:h-1 after:bg-gray-300 after:bottom-0 after:left-0 after:scale-0 after:duration-500 hover:after:scale-100'>
             <FontAwesomeIcon icon={faGithub} />
-            <a href="https://github.com/szerncse/" target="_blank" rel="noreferrer"> 깃허브</a>
+            <a href="https://github.com/szerncse/" target="_blank" rel="noreferrer " className='text-black dark:text-white'> 깃허브</a>
           </li>
 
           <li className='relative after:absolute after:w-full after:h-1 after:bg-gray-300 after:bottom-0 after:left-0 after:scale-0 after:duration-500 hover:after:scale-100 text-sky-500'>
-            <FontAwesomeIcon icon={faCube} /><span className="text-black"> 노션</span>  </li>
+            <FontAwesomeIcon icon={faCube} /><a href="/" className='text-black dark:text-white'> 노션</a> </li>
 
           <li className='relative after:absolute after:w-full after:h-1 after:bg-gray-300 after:bottom-0 after:left-0 after:scale-0 after:duration-500 hover:after:scale-100 text-yellow-300'>
-            <FontAwesomeIcon icon={faComment} /><span className="text-black"><a href="https://open.kakao.com/o/skxXBzSf"> 카카오</a></span>
+            <FontAwesomeIcon icon={faComment} /><a href="https://open.kakao.com/o/skxXBzSf" className='text-black dark:text-white'> 카카오</a>
           </li>
         </ul>
       </div>
 
 
-      <div className=" skill S">
+      <div className=" skill S ">
         <Different /></div>
 
 
 
-      <div className=" project P">
+      <div className=" project P dark:bg-[#272929]">
         <Projectsfile /></div>
 
 
