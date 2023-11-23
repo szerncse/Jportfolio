@@ -90,7 +90,7 @@ function Different() {
 
         const scrollEvent = () => {
             const rect = document.querySelector("#content").getBoundingClientRect();
-            console.log(rect);
+            // console.log(rect);
             if (rect.top <= window.innerHeight && rect.bottom >= 0) {
                 setIsView(true);
             }
