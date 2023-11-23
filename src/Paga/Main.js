@@ -149,10 +149,10 @@ function Main() {
       </div>
 
 
-      <div className='w-full dark:bg-[#555959] dark:text-[#fff]'>
-        <div className='text-5xl md:text-6xl lg:text-7xl text-center mb-10 about  drop-shadow-[1px_0_2px_black]
+      <div className='w-full dark:bg-[#555959] dark:text-[#fff] pt-10 A'>
+        <div className='text-5xl md:text-6xl lg:text-7xl text-center mb-10 about  drop-shadow-[1px_0_2px_black] 
  text-white 
-      A 'data-aos="fade-up"
+       'data-aos="fade-up"
           data-aos-duration="700">About</div>
         <div className="w-full flex flex-col  md:flex-row mx-auto
         justify-center items-center mt-20 md:mt-20 lg:mt-40 gap-[50px]
