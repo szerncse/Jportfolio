@@ -168,7 +168,7 @@ function Projectsfile() {
         <div className='flex flex-col items-center justify-center mb-20'>
         <div className='flex sm:gap-14'>
         <ul className=''>
-          <li className='absolute text-lg sm:ml-8 text-white bg-red-300 w-14 text-center border rounded-3xl drop-shadow-[1px_0_2px_black]'>NEW</li>
+          <li className='absolute text-lg sm:ml-8 text-white bg-red-300 w-14 text-center border rounded-3xl drop-shadow-[1px_0_2px_black] animate__animated animate__flash'>NEW</li>
         </ul>
        
         {
