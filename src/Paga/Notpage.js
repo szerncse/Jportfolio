@@ -54,7 +54,7 @@ cursor: pointer;
 `
 
 
-function Notfage() {
+function Notpage() {
 
     const navigate = useNavigate();
     const [countDown, setCountDown] = useState(5);
@@ -88,4 +88,4 @@ function Notfage() {
   )
 }
 
-export default Notfage
+export default Notpage

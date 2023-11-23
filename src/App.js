@@ -9,6 +9,8 @@ import { useEffect, useRef, useState } from 'react';
 
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import Notpage from './Paga/Notpage';
+import { Route, Routes } from 'react-router-dom';
 
 
 
@@ -82,6 +84,10 @@ function App() {
         <Main ThemeSelect={ThemeSelect} themeConfig={themeConfig}/>
         <Aside ThemeSelect={ThemeSelect} themeConfig={themeConfig}/>
       </ThemeProvider>
+      <Routes>
+      <Route path="/" element={<Main/>}></Route>
+      <Route path="/*" element={<Notpage/>}></Route>
+      </Routes>
     </>
   );
 }
