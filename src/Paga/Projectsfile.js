@@ -174,12 +174,12 @@ function Projectsfile() {
         {
           protdatalist.slice(-1).map((e, i) => (
             <a href={e.link} target="_blank" rel="noopener noreferrer" key={i}>
-            <div className='relative overflow-hidden group 
+            <div className='relative overflow-hidden group  
 
              drop-shadow-[20px_20px_13px_gray]
              text-lg bg-white w-80 h-80 text-center border rounded-full cursor-pointer' key={i} style={{ backgroundImage: `url(${e.img})`, backgroundSize: "cover", backgroundPosition: "center" }} >
               <div className=" absolute w-full h-full bg-black/50 duration-500 
-            left-0 top-[100%] group-hover:top-5 z-20 border rounded-full text-white pt-8">
+            left-0 top-[100%] group-hover:top-5 z-20 border rounded-full text-white pt-8 sm:hidden">
                 <ul>
                   <li>프로젝트이름: {e.name}</li>
                   <li>제작기간: {e.days}</li>
